@@ -375,7 +375,7 @@
       
         jQuery.ajax({
           type: 'GET',
-          url: 'v1.hitokoto.cn?c=a&c=d&c=e&c=f&c=i&encode=json&charset=utf-8',
+          url: 'https://v1.hitokoto.cn?c=a&c=d&c=e&c=f&c=i&encode=json&charset=utf-8',
           headers: {},
           dataType: 'json',
           success: function(result) {
@@ -399,7 +399,7 @@
           },
           error: function(xhr, status, error) {
             if (error) {
-              console.error('Failed to request v1.hitokoto.cn?c=a&amp;c=d&amp;c=e&amp;c=f&amp;c=i&amp;encode=json&amp;charset=utf-8:', error);
+              console.error('Failed to request https://v1.hitokoto.cn?c=a&amp;c=d&amp;c=e&amp;c=f&amp;c=i&amp;encode=json&amp;charset=utf-8:', error);
             }
             typing(text);
           }

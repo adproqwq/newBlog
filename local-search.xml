@@ -4,6 +4,48 @@
   
   
   <entry>
+    <title>GKD规则编写之选择器-2</title>
+    <link href="./2023/12/23/GKD%E8%A7%84%E5%88%99%E7%BC%96%E5%86%99%E4%B9%8B%E9%80%89%E6%8B%A9%E5%99%A8-2/"/>
+    <url>./2023/12/23/GKD%E8%A7%84%E5%88%99%E7%BC%96%E5%86%99%E4%B9%8B%E9%80%89%E6%8B%A9%E5%99%A8-2/</url>
+    
+    <content type="html"><![CDATA[<h1 id="关系选择器">关系选择器</h1><p>上一篇讲完了<code>属性选择器</code>，现在来讲<code>关系选择器</code></p><p><code>关系选择器</code>用于连接两个<code>属性选择器</code>，可以回忆一下1+2的例子，+号就是所谓<code>关系选择器</code>。</p><p><code>关系选择器</code>由两部分构成，分别是：<code>关系操作符</code>和<code>关系表达式</code></p><h2 id="关系操作符">关系操作符</h2><p><code>关系操作符</code>，用于指示查找节点的方向</p><p>打个比方，将所有的节点比作一个大家庭，那么这个家庭里面就肯定会有兄弟姐妹、祖先后人。那么<code>关系操作符</code>就是用来描述两个节点间的关系。</p><p><code>关系操作符</code>有5种：<code>+</code>、<code>-</code>、<code>&gt;</code>、<code>&lt;</code>、<code>&lt;&lt;</code></p><h3 id="section">+</h3><p><code>+</code>操作符，表示前置兄弟节点。</p><p>何为前置兄弟节点？</p><p>这里给一个样例：<code>A + B</code></p><p>用回那个比喻，A跟B就是家里的两兄弟，而且他们是“相邻”的兄弟（“相邻”的兄弟就是指大哥和二哥、三哥和四哥这样的数字相邻的兄弟）</p><p>A是大哥，B就是二哥</p><p>只能匹配相邻的兄弟节点，那岂不是很鸡肋？</p><p>放心，在讲完<code>关系表达式</code>后，就不会让你觉得鸡肋了</p><h3 id="section-1">-</h3><p><code>-</code>操作符，表示后置兄弟节点。</p><p>还是那个样例，不过把<code>+</code>换成<code>-</code>变成：<code>A - B</code></p><p>A和B还是家里的两兄弟，也还是“相邻”兄弟，但是现在：</p><p>B是大哥，A是二哥</p><p>总的来说，可以类比数学的逆运算，<code>-</code>操作符就是<code>+</code>操作符的逆运算</p><h3 id="section-2">&gt;</h3><p><code>&gt;</code>操作符，表示祖先节点。</p><p>有请助教样例大哥：<code>A &gt; B</code></p><p>祖先节点，字面意思：就是谁是谁祖先</p><p>那么看到样例，A是B的祖先，很好理解吧</p><p>但是祖先也有辈分之分啊，这个样例中，A就是B的爸爸<del>（没错，你可以管你的爸爸叫祖先）</del></p><p>还是那句话，讲完<code>关系表达式</code>就可以解锁更高级操作了</p><h3 id="section-3">&lt;</h3><p><code>&lt;</code>操作符，表示直接<strong>子</strong>节点</p><p>还是助教大哥：<code>A &lt; B</code></p><p>还是按照字面理解：谁是谁儿子</p><p>样例中表达的就是：A节点是B节点儿子</p><h3 id="section-4">&lt;&lt;</h3><p><code>&lt;&lt;</code>操作符，表示子孙节点</p><p>不说了，懂得都懂：<code>A &lt;&lt; B</code></p><p>还是字面意思：谁是谁的子孙，也就是谁是谁的后代</p><p>样例就是：A是B的后代</p><h2 id="关系表达式">关系表达式</h2><p>关系表达式分两种，<code>元组表达式</code>和<code>多项式表达式</code>。关系表达式被<code>()</code>括起来，并且位于关系操作符的后方</p><h3 id="元组表达式">元组表达式</h3><p><code>元组表达式</code>由有序递增的正整数组成，可以理解为数学中的数列</p><p>下面是几个<code>元组表达式</code>：</p><ul><li><code>(1)</code></li><li><code>(1,2,3,4,5)</code></li><li><code>(2,4,6)</code></li></ul><h3 id="多项式表达式">多项式表达式</h3><p><code>多项式表达式</code>中的<code>多项式</code>就是数学中的一元一次多项式，在<code>多项式表达式</code>中以n为未知数</p><p>从本质来说，<code>多项式表达式</code>是<code>元组表达式</code>的另一种表达方式</p><blockquote><p>这个元组的数字满足集合<code>&#123;an+b|an+b&gt;=1,n&gt;=1&#125;(a,b是常整数)</code>如果集合为空集则表达式非法</p></blockquote><p>那么，根据初中数学相关知识，我们可以知道：</p><ol type="1"><li>当a&lt;=0时，存在一个等价的有限<code>元组表达式</code>，如：<ul><li><code>(-n+4)</code>等价于<code>(1,2,3)</code></li><li><code>(-3n+10)</code>等价于<code>(1,4,7)</code></li></ul></li><li>当a&gt;0时，存在一个等价的无限<code>元组表达式</code>，如：<ul><li><code>(n)</code>等价于<code>(1,2,3,...)</code></li><li><code>(2n-1)等价于(1,3,5,...)</code></li></ul></li></ol><h2 id="关系选择器-1">关系选择器</h2><blockquote><p>将 关系操作符 和 关系表达式 连接起来就得到了 关系选择器</p></blockquote><h3 id="用法解释">用法解释</h3><p>以下是5个<code>关系选择器</code>：</p><ul><li><code>A +5 B</code></li><li><code>A -5 B</code></li><li><code>A &gt;3 B</code></li><li><code>A &lt;3 B</code></li><li><code>A &lt;&lt;n B</code></li></ul><p>对于<code>A +5 B</code>，就是说：A是大哥，B就是六哥</p><p>同样的，对于<code>A -5 B</code>，A是六哥，B是大哥</p><p>对于<code>A &gt;3 B</code>，A是爷爷（设为第1代），B是曾孙子（则B为第4代）</p><p>但是<code>A &lt;3 B</code>有些许不同，不知道你有没有注意到：在介绍<code>&lt;</code>关系操作符时，<code>子</code>字被加粗了。</p><p>因为<code>A &lt;3 B</code>并不是曾孙子与爷爷的关系，而是三哥与爸爸的关系，即：A是B的三儿子</p><p>对于<code>A &lt;&lt;n B</code>，A是B的祖先，由于它的<code>多项式表达式</code>是<code>(n)</code>，等价的<code>元组表达式</code>就是<code>(1,2,3,...)</code>，所以可以找到A的所有B祖先</p><h3 id="定义">定义</h3><p>还记得上一篇讲过的<code>属性名</code>吗？其中的<code>index</code>、<code>depth</code>是确定两个节点之间关系的关键</p><blockquote><p><code>A +(a1,a2,a3,a_n) B</code> : A.index 满足 B.index-(a_m), 其中a_m 是元组的任意一个数字</p><p><code>A -(a1,a2,a3,a_n) B</code> : A.index 满足 B.index+(a_m)</p><p><code>A &gt;(a1,a2,a3,a_n) B</code> : A.depth 满足 B.depth-(a_m),根节点的 depth=0</p><p><code>A &lt;(a1,a2,a3,a_n) B</code> : A.index 满足 a_m-1</p><p><code>A &lt;&lt;(a1,a2,a3,a_n) B</code> : A.order 满足 a_m-1,A.order（无法通过网页审查工具得知） 是深度优先先序遍历的索引 (搭配quickFind 使用)</p></blockquote><p>所以，确定两个节点的关系关键在于<code>index</code>和<code>depth</code>的值，而不是单纯的数户口。</p><p>例如：现在有2个<code>FrameLayout</code>，其中一个的<code>index</code>值是0，另一个的<code>index</code>值是3，但是它们在网页审查工具中是相邻的节点。如果你要使用<code>-</code>关系操作符选中<code>index</code>为3的<code>FrameLayout</code>，这时规则就不能写成<code>@FrameLayout[index=3] - FrameLayout[index=0]</code>了，而应写成<code>@FrameLayout[index=3] -3 FrameLayout[index=0]</code>。当然，实际中写成<code>FrameLayout[index=3]</code>会更好。</p><h3 id="简写">简写</h3><blockquote><p>当 a=0 或 b=0 时, 括号可以省略, 比如 <code>A +(3n+0) B</code> -&gt;<code>A +(3n) B</code> -&gt;<code>A +3n B</code>，<code>A +(0n+3) B</code> -&gt;<code>A +(+3) B</code> -&gt; <code>A +3 B</code></p><p>当 a=0 且 b=1 时, an+b 可以省略, 比如 <code>A &lt;(0n+1) B</code>-&gt; <code>A &lt; B</code>, 此外<code>A + B</code>,<code>A &gt; B</code> 都与等价的 css 语法语义相同</p><p>当 a=1 且 b=0 且操作符是 <code>&gt;</code>, 可以进一步简写, 比如<code>A &gt;(1n+0) B</code> -&gt; <code>A &gt;n B</code> -&gt;<code>A B</code>, 这与等价的 css 语法语义相同</p></blockquote><p>当然，不简写也是可以的，就是会丧失一些代码的简洁性</p><h1 id="后记">后记</h1><p>那么，GKD规则编写之选择器的教程就到此结束，也欢迎在评论区留言探讨。</p><p>如果本教程有什么谬误，或者对本教程有什么建议的话，也欢迎在下方评论区给出你的建议。</p><p>本篇教程不算太完善，以后会慢慢优化的。</p><p>那么，祝你写的规则不会误触，不会失效！</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>GKD</tag>
+      
+      <tag>教程</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>GKD规则编写之选择器-1</title>
+    <link href="./2023/12/23/GKD%E8%A7%84%E5%88%99%E7%BC%96%E5%86%99%E4%B9%8B%E9%80%89%E6%8B%A9%E5%99%A8-1/"/>
+    <url>./2023/12/23/GKD%E8%A7%84%E5%88%99%E7%BC%96%E5%86%99%E4%B9%8B%E9%80%89%E6%8B%A9%E5%99%A8-1/</url>
+    
+    <content type="html"><![CDATA[<h1 id="前言">前言</h1><p>本教程仅为个人理解，可能不严谨，请见谅。</p><p>本教程不会有太多的图<del>，别问，问就是懒得截</del></p><p>GKD的规则编写靠的就是选择器，选择器的作用就是根据信息去定位节点。</p><p>GKD所使用的选择器是类似CSS的选择器的，所以如果写过CSS的上手会更快一些。</p><p>下面正式开始。</p><hr /><h1 id="语法">语法</h1><p>先展示下官方的介绍：</p><blockquote><p>与 css 类似, 一个选择器由 属性选择器 和 关系选择器 交叉组成,并且开头末尾必须是 属性选择器</p><p>示例 <code>div &gt; img</code> 的结构是<code>属性选择器 关系选择器 属性选择器</code>, 它表示选择一个<code>img</code> 节点并且它父节点是 <code>div</code>, 这与相同 css语法语义一致</p><p>另外 属性选择器 和 关系选择器 之前必须强制用空格隔开, 也就是<code>div&gt;img</code> 是非法的, 必须写成 <code>div &gt; img</code></p></blockquote><blockquote><p>一个选择器由 属性选择器 和 关系选择器 交叉组成, 并且开头末尾必须是属性选择器</p></blockquote><p>这句是什么意思呢？第二段也有例子，如果看不懂的话，用数学来举例就明白了：1+2</p><p>式子里的1和2就是所谓<code>属性选择器</code>，+号就是所谓<code>关系选择器</code>，开头和末尾必须是<code>属性选择器</code>的原因也就知道了，因为像1+2+ 这样的式子是不完整的。</p><h1 id="属性选择器">属性选择器</h1><p>官方的文档对于属性选择器的介绍太长，就不放全文了。</p><h2 id="section">@</h2><p>现在介绍一下<code>@</code>。</p><blockquote><p><code>@</code> 表示选择此节点, 一条规则最后属性选择器 <code>@</code>生效, 如果没有 <code>@</code>, 取最后一个属性选择器</p></blockquote><p>什么意思呢？这里用一条规则去举例：</p><figure><div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">FrameLayout &gt; @FrameLayout &gt; ViewGroup<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure><p>现在的<code>@</code>在第二个<code>FrameLayout</code>处，就是告诉程序：你要点击的是这个<code>FrameLayout</code>，而不是其它的节点。</p><p>如果现在将<code>@</code>删去，变成</p><figure><div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">FrameLayout &gt; FrameLayout &gt; ViewGroup<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure><p>会是什么结果？程序就不会点击第二个<code>FrameLayout</code>，而是点击最后的<code>ViewGroup</code>了。</p><p>可以将其理解为与下方的规则等价</p><figure><div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">FrameLayout &gt; FrameLayout &gt; @ViewGroup<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure><h2 id="name属性">name属性</h2><p>上节规则中的<code>FrameLayout</code>、<code>ViewGroup</code>到底是什么？</p><p>现在来介绍：name属性。</p><p><del>不是什么重点就随便写写啦</del></p><p><code>FrameLayout</code>、<code>ViewGroup</code>，包括常见的<code>TextView</code>、<code>ImageView</code>等等，都是节点的name属性，代表着该节点的类型<em>（个人理解）</em>。</p><blockquote><p>由于该选择器主要用于 Android 平台, 节点的 name 都是 java 类如android.text.TextView 这种形式</p></blockquote><p><code>TextView</code>等价于<code>[name='TextView'||name$='.TextView']</code>，其它也是一样的。</p><h2 id="表达式">表达式</h2><p>表达式有<code>逻辑表达式</code>和<code>布尔表达式</code>，表达式一般跟在<code>name属性</code>后面，用<code>[]</code>括起来。</p><p>看到这里，你就想到上节末尾的<code>[name='TextView'||name$='.TextView']</code>，没错，那就是一个表达式。</p><p>表达式的作用是：限制<code>name属性</code>的范围。如果只写<code>FrameLayout</code>，那一个快照内有多少的<code>FrameLayout</code>，程序不能明白你要点击的是哪个<code>FrameLayout</code>。但是加上表达式后，程序就知道你要点击哪一个<code>FrameLayout</code>了</p><h3 id="布尔表达式">布尔表达式</h3><blockquote><p>布尔表达式 由 <code>属性名</code> <code>操作符</code> <code>值</code>构成</p></blockquote><h4 id="属性名">属性名</h4><p>在网页审查工具中，红圈的地方就是属性名。<imgsrc="https://cdn.jsdelivr.net/gh/adproqwq/AdproImageHostingService@main/GKD教程-1.6gdio2c65tg0.png"alt="属性名展示" /></p><p>在实际规则编写中，一般不允许使用从<code>left</code>往下的，除<code>childCount</code>和<code>index</code>以外的属性名。</p><h4 id="操作符">操作符</h4><p>操作符有：<code>=</code>， <code>!=</code>， <code>&gt;</code>，<code>&lt;</code>， <code>&gt;=</code>， <code>&lt;=</code>，<code>^=</code>， <code>*=</code>， <code>$=</code>， <code>!^=</code>，<code>!*=</code>， <code>!$=</code></p><p><code>^=</code>：<code>以...开始</code><code>*=</code>：<code>包含</code><code>$=</code>：<code>以...结束</code><code>!^=</code>：<code>不以...开始</code><code>!*=</code>：<code>不包含</code><code>!$=</code>：<code>不以...结束</code></p><p>这里用<code>*=</code>举例：</p><figure><div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">TextView[text*&#x3D;&#39;123&#39;]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure><p>这条规则的意思就是：选择<code>text</code>属性名中包含<code>123</code>的节点。</p><p>其它是雷同的。</p><h4 id="值">值</h4><p>值有4种类型：<code>null</code>，<code>boolean</code>，<code>string</code>，<code>int</code></p><ul><li><code>null</code>，一般不用</li><li><code>boolean</code>：使用<code>true</code>或者<code>false</code>，比较少见</li><li><code>string</code>：使用"、`、'之一成对包裹，内部字符转义使用<code>\</code>。注意：<code>string</code>不支持多行字符，另外处于<code>[0, 0x1F]</code> 的控制字符必须使用转义字符表示</li><li><code>int</code>：匹配<code>0-9</code>的数字，仅支持10进制</li></ul><p>特别地，有些<code>操作符</code>只能在对应的类型使用。</p><p>如<code>a&gt;''</code>，学过数学的同学都知道：大于号是用来比较数字的大小的。同样的，<code>&gt;</code>这个操作符只能用于<code>int</code>类型的值，但是例子却用来比较<code>string</code>类型的值，所以它永远是不成立的。放到规则编写里，这就是非法选择器。</p><p>下面是<code>操作符</code>在<code>值</code>的类型中的可用性的表格（<code>-</code>表示不可用）：</p><table><thead><tr class="header"><th style="text-align: center;"></th><th style="text-align: center;">null</th><th style="text-align: center;">boolean</th><th style="text-align: center;">int</th><th style="text-align: center;">string</th></tr></thead><tbody><tr class="odd"><td style="text-align: center;">=</td><td style="text-align: center;">✔</td><td style="text-align: center;">✔</td><td style="text-align: center;">✔</td><td style="text-align: center;">✔</td></tr><tr class="even"><td style="text-align: center;">!=</td><td style="text-align: center;">✔</td><td style="text-align: center;">✔</td><td style="text-align: center;">✔</td><td style="text-align: center;">✔</td></tr><tr class="odd"><td style="text-align: center;">&gt;</td><td style="text-align: center;">-</td><td style="text-align: center;">-</td><td style="text-align: center;">✔</td><td style="text-align: center;">-</td></tr><tr class="even"><td style="text-align: center;">&lt;</td><td style="text-align: center;">-</td><td style="text-align: center;">-</td><td style="text-align: center;">✔</td><td style="text-align: center;">-</td></tr><tr class="odd"><td style="text-align: center;">&gt;=</td><td style="text-align: center;">-</td><td style="text-align: center;">-</td><td style="text-align: center;">✔</td><td style="text-align: center;">-</td></tr><tr class="even"><td style="text-align: center;">&lt;=</td><td style="text-align: center;">-</td><td style="text-align: center;">-</td><td style="text-align: center;">✔</td><td style="text-align: center;">-</td></tr><tr class="odd"><td style="text-align: center;">^=</td><td style="text-align: center;">-</td><td style="text-align: center;">-</td><td style="text-align: center;">-</td><td style="text-align: center;">✔</td></tr><tr class="even"><td style="text-align: center;">*=</td><td style="text-align: center;">-</td><td style="text-align: center;">-</td><td style="text-align: center;">-</td><td style="text-align: center;">✔</td></tr><tr class="odd"><td style="text-align: center;"><span class="math inline">\(= | - | - |- | ✔ | | !^= | - | - | - | ✔ | | !*= | - | - | - | ✔ | |!\)</span>=</td><td style="text-align: center;">-</td><td style="text-align: center;">-</td><td style="text-align: center;">-</td><td style="text-align: center;">✔</td></tr></tbody></table><h3 id="逻辑表达式">逻辑表达式</h3><p><code>逻辑表达式</code>有<code>操作符</code>：<code>||</code>和<code>&amp;&amp;</code></p><ul><li><code>||</code>：表示<code>或</code>，即<code>||</code>的两边只需满足其一。<code>||</code>的两边常为<code>布尔表达式</code></li><li><code>&amp;&amp;</code>：表示<code>并且</code>，即<code>&amp;&amp;</code>的两边需要全部满足。<code>&amp;&amp;</code>的两边常为<code>布尔表达式</code></li></ul><p>特别地，<code>&amp;&amp;</code>的优先级更高，即<code>[a&gt;1||b&gt;1&amp;&amp;c&gt;1||d&gt;1]</code>等价于<code>[a&gt;1||(b&gt;1&amp;&amp;c&gt;1)||d&gt;1]</code></p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>GKD</tag>
+      
+      <tag>教程</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>交流专用帖</title>
     <link href="./2023/12/17/%E4%BA%A4%E6%B5%81%E4%B8%93%E7%94%A8%E5%B8%96/"/>
     <url>./2023/12/17/%E4%BA%A4%E6%B5%81%E4%B8%93%E7%94%A8%E5%B8%96/</url>
@@ -42,69 +84,6 @@
   
   
   <entry>
-    <title>七古·来生约</title>
-    <link href="./2023/12/02/%E4%B8%83%E5%8F%A4%C2%B7%E6%9D%A5%E7%94%9F%E7%BA%A6/"/>
-    <url>./2023/12/02/%E4%B8%83%E5%8F%A4%C2%B7%E6%9D%A5%E7%94%9F%E7%BA%A6/</url>
-    
-    <content type="html"><![CDATA[<p>一见伊人定终生，互赠情定城西楼。郎许伊人鸳鸯被，妾允情郎同霜首。一日不见如三秋，妾思君意君知否？大雪纷纷映红妆，红雀寻春西城走。“父母有命媒妁言，此生难以共君守。今日共君同淋雪，此生也算共白头。”</p>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>诗词</tag>
-      
-      <tag>七古</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>五古·科举</title>
-    <link href="./2023/12/02/%E4%BA%94%E5%8F%A4%C2%B7%E7%A7%91%E4%B8%BE/"/>
-    <url>./2023/12/02/%E4%BA%94%E5%8F%A4%C2%B7%E7%A7%91%E4%B8%BE/</url>
-    
-    <content type="html"><![CDATA[<p>读尽经与书，青云何愁难。闱考金榜名，德行有何堪。府中金愈重，黎民衣更单。何得冲天将，血溅染长安。</p>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>诗词</tag>
-      
-      <tag>五古</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>如梦令·暮看云</title>
-    <link href="./2023/11/06/%E5%A6%82%E6%A2%A6%E4%BB%A4%C2%B7%E6%9A%AE%E7%9C%8B%E4%BA%91/"/>
-    <url>./2023/11/06/%E5%A6%82%E6%A2%A6%E4%BB%A4%C2%B7%E6%9A%AE%E7%9C%8B%E4%BA%91/</url>
-    
-    <content type="html"><![CDATA[<p>西下棉云又暖，色染斜阳似粉，似彩练空延。北燕，秋晚，云浅日沉暮晚。</p>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>诗词</tag>
-      
-      <tag>如梦令</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>P2669金币-题解</title>
     <link href="./2023/10/27/P2669%E9%87%91%E5%B8%81-%E9%A2%98%E8%A7%A3/"/>
     <url>./2023/10/27/P2669%E9%87%91%E5%B8%81-%E9%A2%98%E8%A7%A3/</url>
@@ -120,48 +99,6 @@
       <tag>题解</tag>
       
       <tag>Python</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>五古·无题</title>
-    <link href="./2023/10/15/%E4%BA%94%E5%8F%A4%C2%B7%E6%97%A0%E9%A2%98/"/>
-    <url>./2023/10/15/%E4%BA%94%E5%8F%A4%C2%B7%E6%97%A0%E9%A2%98/</url>
-    
-    <content type="html"><![CDATA[<p>苦痛炎黄土，百年战不休。年年如荒疫，日日似冬秋。天心感悲怮，降人杰戚休。</p>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>诗词</tag>
-      
-      <tag>五古</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>如梦令·读词有感</title>
-    <link href="./2023/10/15/%E5%A6%82%E6%A2%A6%E4%BB%A4%C2%B7%E8%AF%BB%E8%AF%8D%E6%9C%89%E6%84%9F/"/>
-    <url>./2023/10/15/%E5%A6%82%E6%A2%A6%E4%BB%A4%C2%B7%E8%AF%BB%E8%AF%8D%E6%9C%89%E6%84%9F/</url>
-    
-    <content type="html"><![CDATA[<p>追往忆昔如故，尝阅词书一部。尽大宋遗牍，恍见当年风物。思故，忽悟，当世胜之无数。</p>]]></content>
-    
-    
-    
-    <tags>
-      
-      <tag>诗词</tag>
-      
-      <tag>如梦令</tag>
       
     </tags>
     

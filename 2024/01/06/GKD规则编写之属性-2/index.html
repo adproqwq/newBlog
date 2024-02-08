@@ -24,7 +24,7 @@
 <meta property="og:description" content="0. 前言本篇主要讲述在GKD规则编写中不必需，但常用的属性。 如果没有看过上一篇的同学，请看完上一篇哦！ 1. 正文1.1 snapshotUrlssnapshotUrls属性通常位于rules属性内，与matches属性同级。 snapshotUrls属性后接字符串，字符串的内容是快照的导入链接。 那么，什么是快照？又有什么作用？ 1.1.1 快照以下对于快照的介绍来自@Snoopy1866（">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-01-06T05:00:23.000Z">
-<meta property="article:modified_time" content="2024-01-06T05:46:19.387Z">
+<meta property="article:modified_time" content="2024-02-08T14:36:41.210Z">
 <meta property="article:author" content="Adpro">
 <meta property="article:tag" content="GKD">
 <meta property="article:tag" content="教程">
@@ -269,7 +269,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          696 字
+          1k 字
         
       </span>
     
@@ -280,7 +280,7 @@
         
         
         
-          6 分钟
+          9 分钟
         
       </span>
     
@@ -330,7 +330,7 @@
               <p id="updated-time" class="note note-info" style="display: none">
                 
                   
-                    本文最后更新于 2024-01-06T13:46:19+08:00
+                    本文最后更新于 2024-02-08T22:36:41+08:00
                   
                   
 
@@ -400,7 +400,7 @@
 <li><code>[text$=&#39;abc&#39;]</code></li>
 </ul>
 <p>比如 <code>A &gt; B + C[id=&#39;x&#39;][childCount=2]</code> 符合, 但 <code>A &gt; B + C[childCount=2][id=&#39;x&#39;]</code> 不符合</p>
-<p>并且<code>网页审查工具</code>出现<code>可快速查找</code>提示时，可以使用<code>quickFind</code>属性。</p>
+<p>并且<code>网页审查工具</code>出现<code>可快速查找</code>提示（即一个对勾）时，可以使用<code>quickFind</code>属性。</p>
 <h4 id="1-2-2-2-quickFind属性的位置"><a href="#1-2-2-2-quickFind属性的位置" class="headerlink" title="1.2.2.2 quickFind属性的位置"></a>1.2.2.2 quickFind属性的位置</h4><ol>
 <li><p>当<code>quickFind</code>属性与<code>rules</code>属性同级时，该规则组的所有规则全部使用<code>quickFind</code>。</p>
 <p>可以理解为：在该规则组下全局开启<code>quickFind</code>。</p>
@@ -409,7 +409,36 @@
 <p>可以理解为：局部使用<code>quickFind</code></p>
 </li>
 </ol>
-<h2 id="1-3-activityIds"><a href="#1-3-activityIds" class="headerlink" title="1.3 activityIds"></a>1.3 activityIds</h2><p>–TODO–</p>
+<h2 id="1-3-activityIds"><a href="#1-3-activityIds" class="headerlink" title="1.3 activityIds"></a>1.3 activityIds</h2><p><code>activityIds</code>属性需要搭配<code>网页审查工具</code>使用。</p>
+<p>这里拓展下，什么是activity？</p>
+<h3 id="1-3-1-activity"><a href="#1-3-1-activity" class="headerlink" title="1.3.1 activity"></a>1.3.1 activity</h3><p>Android的Activity是一个应用组件，一个应用通常由多个彼此松散联系的activity组成，在这里，你只需要知道这个就足够了。</p>
+<p>GKD的activityIds与Android的Activity是一样的。</p>
+<h3 id="1-3-2-介绍"><a href="#1-3-2-介绍" class="headerlink" title="1.3.2 介绍"></a>1.3.2 介绍</h3><p><code>activityIds</code>属性接受一个<code>String</code>类型（即字符串）的值 或者 一个<code>String</code>类型的数组</p>
+<p>值的内容是规则执行的activityId</p>
+<h4 id="1-3-2-1-activityIds属性的意义"><a href="#1-3-2-1-activityIds属性的意义" class="headerlink" title="1.3.2.1 activityIds属性的意义"></a>1.3.2.1 activityIds属性的意义</h4><blockquote>
+<p>值的内容是规则执行的activityId</p>
+</blockquote>
+<p>如何理解这句话？</p>
+<p>activityIds相当于是一个牢笼，将规则的生效范围局限在activityIds规定的Activity下。</p>
+<p>比如，一个规则A，在Activity1下能正常工作，但在Activity2下误触。</p>
+<p>这时，我们就需要用activityIds，将规则的生效范围限定在Activity1，使其不在Activity2生效</p>
+<h4 id="1-3-2-2-格式"><a href="#1-3-2-2-格式" class="headerlink" title="1.3.2.2 格式"></a>1.3.2.2 格式</h4><p>使用方法如下：</p>
+<figure><div class="code-wrapper"><pre class="line-numbers language-json" data-language="json"><code class="language-json">activityIds<span class="token operator">:</span> 'activiId'<span class="token punctuation">,</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure>
+<p>或</p>
+<figure><div class="code-wrapper"><pre class="line-numbers language-json" data-language="json"><code class="language-json">activityIds<span class="token operator">:</span> <span class="token punctuation">[</span>
+    <span class="token string">"activityId1"</span><span class="token punctuation">,</span>
+    <span class="token string">"activityId2"</span><span class="token punctuation">,</span>
+    ...
+<span class="token punctuation">]</span><span class="token punctuation">,</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></div></figure>
+
+<h4 id="1-3-2-3-说明"><a href="#1-3-2-3-说明" class="headerlink" title="1.3.2.3 说明"></a>1.3.2.3 说明</h4><p>类比<code>quickFind</code>属性，</p>
+<ol>
+<li><p>当<code>activityIds</code>属性与<code>rules</code>属性同级时，该规则组的所有规则全部在<code>activityIds</code>规定的activity中生效。</p>
+</li>
+<li><p>当<code>activityIds</code>属性位于<code>rules</code>属性内的其中一个对象中时，在仅是该<code>子规则集</code>在<code>activityIds</code>规定的activity中生效。</p>
+</li>
+</ol>
+<h2 id="1-4-resetMatch"><a href="#1-4-resetMatch" class="headerlink" title="1.4 resetMatch"></a>1.4 resetMatch</h2><p>–TODO–</p>
 
                 
               </div>

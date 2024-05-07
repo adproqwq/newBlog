@@ -19,7 +19,7 @@
     <meta name="description" content="题目P2669 [NOIP2015 普及组] 金币题目背景NOIP2015 普及组 T1 题目描述国王将金币作为工资，发放给忠诚的骑士。第一天，骑士收到一枚金币；之后两天（第二天和第三天），每天收到两枚金币；之后三天（第四、五、六天），每天收到三枚金币；之后四天（第七、八、九、十天），每天收到四枚金币……；这种工资发放模式会一直这样延续下去：当连续 n 天每天收到 n 枚金币后，骑士会在之后的连续">
 <meta property="og:type" content="article">
 <meta property="og:title" content="P2669金币-题解">
-<meta property="og:url" content="https://blog.adproqwq.xyz/2023/10/27/P2669%E9%87%91%E5%B8%81-%E9%A2%98%E8%A7%A3/index.html">
+<meta property="og:url" content="https://blog.adproqwq.top/2023/10/27/P2669%E9%87%91%E5%B8%81-%E9%A2%98%E8%A7%A3/index.html">
 <meta property="og:site_name" content="AdproのBlog">
 <meta property="og:description" content="题目P2669 [NOIP2015 普及组] 金币题目背景NOIP2015 普及组 T1 题目描述国王将金币作为工资，发放给忠诚的骑士。第一天，骑士收到一枚金币；之后两天（第二天和第三天），每天收到两枚金币；之后三天（第四、五、六天），每天收到三枚金币；之后四天（第七、八、九、十天），每天收到四枚金币……；这种工资发放模式会一直这样延续下去：当连续 n 天每天收到 n 枚金币后，骑士会在之后的连续">
 <meta property="og:locale" content="zh_CN">
@@ -75,7 +75,7 @@
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
     Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"blog.adproqwq.xyz","root":"./","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":false,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"./local-search.xml","include_content_in_search":true};
+    var CONFIG = {"hostname":"blog.adproqwq.top","root":"./","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":false,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"./local-search.xml","include_content_in_search":true};
 
     if (CONFIG.web_analytics.follow_dnt) {
       var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
@@ -115,7 +115,7 @@
 
 
   
-<meta name="generator" content="Hexo 7.0.0"></head>
+<meta name="generator" content="Hexo 7.1.1"></head>
 
 
 <body>
@@ -146,7 +146,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="https://blog.adproqwq.xyz/" target="_self">
+              <a class="nav-link" href="https://blog.adproqwq.top/" target="_self">
                 <i class="iconfont icon-home-fill"></i>
                 <span>首页</span>
               </a>
@@ -158,7 +158,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="https://blog.adproqwq.xyz/archives/" target="_self">
+              <a class="nav-link" href="https://blog.adproqwq.top/archives/" target="_self">
                 <i class="iconfont icon-archive-fill"></i>
                 <span>归档</span>
               </a>
@@ -170,7 +170,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="https://blog.adproqwq.xyz/categories/" target="_self">
+              <a class="nav-link" href="https://blog.adproqwq.top/categories/" target="_self">
                 <i class="iconfont icon-category-fill"></i>
                 <span>分类</span>
               </a>
@@ -182,7 +182,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="https://blog.adproqwq.xyz/tags/" target="_self">
+              <a class="nav-link" href="https://blog.adproqwq.top/tags/" target="_self">
                 <i class="iconfont icon-tags-fill"></i>
                 <span>标签</span>
               </a>
@@ -194,7 +194,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="https://blog.adproqwq.xyz/about/" target="_self">
+              <a class="nav-link" href="https://blog.adproqwq.top/about/" target="_self">
                 <i class="iconfont icon-user-fill"></i>
                 <span>关于</span>
               </a>
@@ -206,7 +206,7 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="https://blog.adproqwq.xyz/links/" target="_self">
+              <a class="nav-link" href="https://blog.adproqwq.top/links/" target="_self">
                 <i class="iconfont icon-link-fill"></i>
                 <span>友链</span>
               </a>
@@ -406,7 +406,7 @@ ans <span class="token operator">=</span> <span class="token number">0</span>
   <div class="license-box my-3">
     <div class="license-title">
       <div>P2669金币-题解</div>
-      <div>https://blog.adproqwq.xyz/2023/10/27/P2669金币-题解/</div>
+      <div>https://blog.adproqwq.top/2023/10/27/P2669金币-题解/</div>
     </div>
     <div class="license-meta">
       
@@ -487,7 +487,7 @@ ans <span class="token operator">=</span> <span class="token number">0</span>
     Fluid.utils.loadComments('#comments', function() {
       Fluid.utils.createScript('https://cdn.bootcdn.net/ajax/libs/twikoo/1.6.27/twikoo.all.min.js', function() {
         var options = Object.assign(
-          {"envId":"https://twikoo.adproqwq.xyz","region":null,"path":"window.location.pathname"},
+          {"envId":"https://twikoo-eta-five.vercel.app","region":null,"path":"window.location.pathname"},
           {
             el: '#twikoo',
             path: 'window.location.pathname',

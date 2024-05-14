@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>关于本人GKD订阅终止维护的通知</title>
+    <link href="./2024/05/14/%E5%85%B3%E4%BA%8E%E6%9C%AC%E4%BA%BAGKD%E8%AE%A2%E9%98%85%E7%BB%88%E6%AD%A2%E7%BB%B4%E6%8A%A4%E7%9A%84%E9%80%9A%E7%9F%A5/"/>
+    <url>./2024/05/14/%E5%85%B3%E4%BA%8E%E6%9C%AC%E4%BA%BAGKD%E8%AE%A2%E9%98%85%E7%BB%88%E6%AD%A2%E7%BB%B4%E6%8A%A4%E7%9A%84%E9%80%9A%E7%9F%A5/</url>
+    
+    <content type="html"><![CDATA[<p>Adpro订阅在2024年5月13日，迎来了终点。</p><hr><p>Adpro订阅诞生于2024年1月28日。那时，GKD默认订阅宣布停止维护，我用了一个小时（可能更长，也可能更短），fork了仓库，修改了配置，迁移了尚未合并的规则，发布了v0版本。</p><p>维护期间，也帮助了一些原来的规则贡献者搭建了第三方订阅，包括aoguai、AIsouler订阅。</p><p>在维护订阅的同时，我新建了<a href="https://github.com/Adpro-Team/GKD_THS_List"><code>GKD_THS_List</code></a>仓库，收录了不少的第三方订阅。开发了现在的GKDTool网页端（在默认订阅时期开发，后来发展出了安卓端，又用Vue重构写了GKDTool 2.0）、开发了李跳跳规则转GKD规则的工具（从开始的命令行，发展到了网页端）。</p><p>可以说，维护订阅的将近4个月，我承担了以上所有工具的维护，同时还要维护订阅。</p><p>也是由于此，可以发现，Adpro订阅开始同步AIsouler订阅，没有自己的更新。</p><p>这种情况的出现，实际上也让Adpro订阅名存实亡。</p><p>所以，Adpro订阅仓库归档，不再维护。</p><p>如果是群友，可能看过我说的这句话：</p><p><img src="https://cdn.jsdelivr.net/gh/adproqwq/picx-images-hosting@master/%E8%A8%80%E8%AE%BA.8ojil6ujxt.png" alt="言论"></p><p>我想说的是，我从来没有想过能达到这个目标，所以我说了这句话。</p><p>但这并不是我终止维护的主要原因。原因在上面已经说得很清楚了。</p><p>在此也要说明，此次的终止维护，完全出于个人原因，没有任何外部因素。</p><p>就这样吧。</p><p>写于2024.5.14</p><hr><p>其它的工具不会终止维护。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>GKD</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>关于域名迁移的通知</title>
     <link href="./2024/05/07/%E5%85%B3%E4%BA%8E%E5%9F%9F%E5%90%8D%E8%BF%81%E7%A7%BB%E7%9A%84%E9%80%9A%E7%9F%A5/"/>
     <url>./2024/05/07/%E5%85%B3%E4%BA%8E%E5%9F%9F%E5%90%8D%E8%BF%81%E7%A7%BB%E7%9A%84%E9%80%9A%E7%9F%A5/</url>

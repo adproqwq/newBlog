@@ -19,22 +19,19 @@
   <meta name="author" content="Adpro">
   <meta name="keywords" content="">
   
-    <meta name="description" content="前言 本教程仅为个人理解，可能不严谨，请见谅。 本教程不会有太多的图~~，别问，问就是懒得截~~ GKD的规则编写靠的就是选择器，选择器的作用就是根据信息去定位节点。 GKD所使用的选择器是类似CSS的选择器的，所以如果写过CSS的上手会更快一些。 下面正式开始。  语法 先展示下官方的介绍：  与 css 类似, 一个选择器由 属性选择器 和 关系选择器 交叉组成, 并且开头末尾必须是 属性选择">
+    <meta name="description" content="前言 本教程仅为个人理解，可能不严谨，请见谅。 本教程不会有太多的图，别问，问就是懒得截 GKD的规则编写靠的就是选择器，选择器的作用就是根据信息去定位节点。 GKD所使用的选择器是类似CSS的选择器的，所以如果写过CSS的上手会更快一些。 下面正式开始。  语法 先展示下官方的介绍：  与 css 类似, 一个选择器由 属性选择器 和 关系选择器 交叉组成, 并且开头末尾必">
 <meta property="og:type" content="article">
 <meta property="og:title" content="GKD规则编写之选择器-1">
 <meta property="og:url" content="https://blog.adproqwq.top/2023/12/23/GKD%E8%A7%84%E5%88%99%E7%BC%96%E5%86%99%E4%B9%8B%E9%80%89%E6%8B%A9%E5%99%A8-1/index.html">
 <meta property="og:site_name" content="AdproのBlog">
-<meta property="og:description" content="前言 本教程仅为个人理解，可能不严谨，请见谅。 本教程不会有太多的图~~，别问，问就是懒得截~~ GKD的规则编写靠的就是选择器，选择器的作用就是根据信息去定位节点。 GKD所使用的选择器是类似CSS的选择器的，所以如果写过CSS的上手会更快一些。 下面正式开始。  语法 先展示下官方的介绍：  与 css 类似, 一个选择器由 属性选择器 和 关系选择器 交叉组成, 并且开头末尾必须是 属性选择">
+<meta property="og:description" content="前言 本教程仅为个人理解，可能不严谨，请见谅。 本教程不会有太多的图，别问，问就是懒得截 GKD的规则编写靠的就是选择器，选择器的作用就是根据信息去定位节点。 GKD所使用的选择器是类似CSS的选择器的，所以如果写过CSS的上手会更快一些。 下面正式开始。  语法 先展示下官方的介绍：  与 css 类似, 一个选择器由 属性选择器 和 关系选择器 交叉组成, 并且开头末尾必">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/adproqwq/AdproImageHostingService@main/GKD%E6%95%99%E7%A8%8B-1.6gdio2c65tg0.png">
-<meta property="og:image" content="https://cdn.jsdelivr.net/gh/adproqwq/AdproImageHostingService@main/GKD%E6%95%99%E7%A8%8B-2.5n9v0l4toxk0.png">
 <meta property="article:published_time" content="2023-12-23T12:43:17.000Z">
 <meta property="article:modified_time" content="2023-12-23T18:08:35.031Z">
 <meta property="article:author" content="Adpro">
 <meta property="article:tag" content="GKD">
 <meta property="article:tag" content="教程">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/adproqwq/AdproImageHostingService@main/GKD%E6%95%99%E7%A8%8B-1.6gdio2c65tg0.png">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -331,31 +328,39 @@
             
               <div class="markdown-body">
                 
-                <h1>前言</h1>
+                <h1 id="前言">前言</h1>
 <p>本教程仅为个人理解，可能不严谨，请见谅。</p>
-<p>本教程不会有太多的图~~，别问，问就是懒得截~~</p>
+<p>本教程不会有太多的图<del>，别问，问就是懒得截</del></p>
 <p>GKD的规则编写靠的就是选择器，选择器的作用就是根据信息去定位节点。</p>
 <p>GKD所使用的选择器是类似CSS的选择器的，所以如果写过CSS的上手会更快一些。</p>
 <p>下面正式开始。</p>
-<hr>
-<h1>语法</h1>
+<hr />
+<h1 id="语法">语法</h1>
 <p>先展示下官方的介绍：</p>
 <blockquote>
-<p>与 css 类似, 一个选择器由 属性选择器 和 关系选择器 交叉组成, 并且开头末尾必须是 属性选择器</p>
-<p>示例 <code>div &gt; img</code> 的结构是 <code>属性选择器 关系选择器 属性选择器</code>, 它表示选择一个 <code>img</code> 节点并且它父节点是 <code>div</code>, 这与相同 css 语法语义一致</p>
-<p>另外 属性选择器 和 关系选择器 之前必须强制用空格隔开, 也就是 <code>div&gt;img</code> 是非法的, 必须写成 <code>div &gt; img</code></p>
+<p>与 css 类似, 一个选择器由 属性选择器 和 关系选择器 交叉组成,
+并且开头末尾必须是 属性选择器</p>
+<p>示例 <code>div &gt; img</code> 的结构是
+<code>属性选择器 关系选择器 属性选择器</code>, 它表示选择一个
+<code>img</code> 节点并且它父节点是 <code>div</code>, 这与相同 css
+语法语义一致</p>
+<p>另外 属性选择器 和 关系选择器 之前必须强制用空格隔开, 也就是
+<code>div&gt;img</code> 是非法的, 必须写成 <code>div &gt; img</code></p>
 </blockquote>
 <blockquote>
-<p>一个选择器由 属性选择器 和 关系选择器 交叉组成, 并且开头末尾必须是 属性选择器</p>
+<p>一个选择器由 属性选择器 和 关系选择器 交叉组成, 并且开头末尾必须是
+属性选择器</p>
 </blockquote>
 <p>这句是什么意思呢？第二段也有例子，如果看不懂的话，用数学来举例就明白了：1+2</p>
-<p>式子里的1和2就是所谓<code>属性选择器</code>，+号就是所谓<code>关系选择器</code>，开头和末尾必须是<code>属性选择器</code>的原因也就知道了，因为像 1+2+ 这样的式子是不完整的。</p>
-<h1>属性选择器</h1>
+<p>式子里的1和2就是所谓<code>属性选择器</code>，+号就是所谓<code>关系选择器</code>，开头和末尾必须是<code>属性选择器</code>的原因也就知道了，因为像
+1+2+ 这样的式子是不完整的。</p>
+<h1 id="属性选择器">属性选择器</h1>
 <p>官方的文档对于属性选择器的介绍太长，就不放全文了。</p>
-<h2 id="">@</h2>
+<h2 id="section">@</h2>
 <p>现在介绍一下<code>@</code>。</p>
 <blockquote>
-<p><code>@</code> 表示选择此节点, 一条规则最后属性选择器 <code>@</code> 生效, 如果没有 <code>@</code>, 取最后一个属性选择器</p>
+<p><code>@</code> 表示选择此节点, 一条规则最后属性选择器 <code>@</code>
+生效, 如果没有 <code>@</code>, 取最后一个属性选择器</p>
 </blockquote>
 <p>什么意思呢？这里用一条规则去举例：</p>
 <figure><div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">FrameLayout &gt; @FrameLayout &gt; ViewGroup<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure>
@@ -368,10 +373,11 @@
 <h2 id="name属性">name属性</h2>
 <p>上节规则中的<code>FrameLayout</code>、<code>ViewGroup</code>到底是什么？</p>
 <p>现在来介绍：name属性。</p>
-<p><s>不是什么重点就随便写写啦</s></p>
-<p><code>FrameLayout</code>、<code>ViewGroup</code>，包括常见的<code>TextView</code>、<code>ImageView</code>等等，都是节点的name属性，代表着该节点的类型*（个人理解）*。</p>
+<p><del>不是什么重点就随便写写啦</del></p>
+<p><code>FrameLayout</code>、<code>ViewGroup</code>，包括常见的<code>TextView</code>、<code>ImageView</code>等等，都是节点的name属性，代表着该节点的类型<em>（个人理解）</em>。</p>
 <blockquote>
-<p>由于该选择器主要用于 Android 平台, 节点的 name 都是 java 类如 android.text.TextView 这种形式</p>
+<p>由于该选择器主要用于 Android 平台, 节点的 name 都是 java 类如
+android.text.TextView 这种形式</p>
 </blockquote>
 <p><code>TextView</code>等价于<code>[name='TextView'||name$='.TextView']</code>，其它也是一样的。</p>
 <h2 id="表达式">表达式</h2>
@@ -380,18 +386,24 @@
 <p>表达式的作用是：限制<code>name属性</code>的范围。如果只写<code>FrameLayout</code>，那一个快照内有多少的<code>FrameLayout</code>，程序不能明白你要点击的是哪个<code>FrameLayout</code>。但是加上表达式后，程序就知道你要点击哪一个<code>FrameLayout</code>了</p>
 <h3 id="布尔表达式">布尔表达式</h3>
 <blockquote>
-<p>布尔表达式 由 <code>属性名</code> <code>操作符</code> <code>值</code> 构成</p>
+<p>布尔表达式 由 <code>属性名</code> <code>操作符</code> <code>值</code>
+构成</p>
 </blockquote>
 <h4 id="属性名">属性名</h4>
-<p>在网页审查工具中，红圈的地方就是属性名。<img src="https://cdn.jsdelivr.net/gh/adproqwq/AdproImageHostingService@main/GKD%E6%95%99%E7%A8%8B-1.6gdio2c65tg0.png" srcset="./img/loading.gif" lazyload alt="属性名展示"></p>
+<p>在网页审查工具中，红圈的地方就是属性名。<img
+src="https://cdn.jsdelivr.net/gh/adproqwq/AdproImageHostingService@main/GKD教程-1.6gdio2c65tg0.png" srcset="./img/loading.gif" lazyload
+alt="属性名展示" /></p>
 <p>在实际规则编写中，一般不允许使用从<code>left</code>往下的，除<code>childCount</code>和<code>index</code>以外的属性名。</p>
 <h4 id="操作符">操作符</h4>
-<p>操作符有：<code>=</code>， <code>!=</code>， <code>&gt;</code>， <code>&lt;</code>， <code>&gt;=</code>， <code>&lt;=</code>， <code>^=</code>， <code>*=</code>， <code>$=</code>， <code>!^=</code>， <code>!*=</code>， <code>!$=</code></p>
-<p><code>^=</code>：<code>以...开始</code><br>
-<code>*=</code>：<code>包含</code><br>
-<code>$=</code>：<code>以...结束</code><br>
-<code>!^=</code>：<code>不以...开始</code><br>
-<code>!*=</code>：<code>不包含</code><br>
+<p>操作符有：<code>=</code>， <code>!=</code>， <code>&gt;</code>，
+<code>&lt;</code>， <code>&gt;=</code>， <code>&lt;=</code>，
+<code>^=</code>， <code>*=</code>， <code>$=</code>， <code>!^=</code>，
+<code>!*=</code>， <code>!$=</code></p>
+<p><code>^=</code>：<code>以...开始</code>
+<code>*=</code>：<code>包含</code>
+<code>$=</code>：<code>以...结束</code>
+<code>!^=</code>：<code>不以...开始</code>
+<code>!*=</code>：<code>不包含</code>
 <code>!$=</code>：<code>不以...结束</code></p>
 <p>这里用<code>*=</code>举例：</p>
 <figure><div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">TextView[text*&#x3D;&#39;123&#39;]<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure>
@@ -402,13 +414,19 @@
 <ul>
 <li><code>null</code>，一般不用</li>
 <li><code>boolean</code>：使用<code>true</code>或者<code>false</code>，比较少见</li>
-<li><code>string</code>：使用&quot;、`、'之一成对包裹，内部字符转义使用<code>\</code>。注意：<code>string</code>不支持多行字符，另外处于 <code>[0, 0x1F]</code> 的控制字符必须使用转义字符表示</li>
+<li><code>string</code>：使用"、`、'之一成对包裹，内部字符转义使用<code>\</code>。注意：<code>string</code>不支持多行字符，另外处于
+<code>[0, 0x1F]</code> 的控制字符必须使用转义字符表示</li>
 <li><code>int</code>：匹配<code>0-9</code>的数字，仅支持10进制</li>
 </ul>
 <p>特别地，有些<code>操作符</code>只能在对应的类型使用。</p>
 <p>如<code>a&gt;''</code>，学过数学的同学都知道：大于号是用来比较数字的大小的。同样的，<code>&gt;</code>这个操作符只能用于<code>int</code>类型的值，但是例子却用来比较<code>string</code>类型的值，所以它永远是不成立的。放到规则编写里，这就是非法选择器。</p>
 <p>下面是<code>操作符</code>在<code>值</code>的类型中的可用性的表格（<code>-</code>表示不可用）：</p>
-<p><img src="https://cdn.jsdelivr.net/gh/adproqwq/AdproImageHostingService@main/GKD%E6%95%99%E7%A8%8B-2.5n9v0l4toxk0.png" srcset="./img/loading.gif" lazyload alt="可用性表格"></p>
+<figure>
+<img
+src="https://cdn.jsdelivr.net/gh/adproqwq/AdproImageHostingService@main/GKD教程-2.5n9v0l4toxk0.png" srcset="./img/loading.gif" lazyload
+alt="可用性表格" />
+<figcaption aria-hidden="true">可用性表格</figcaption>
+</figure>
 <h3 id="逻辑表达式">逻辑表达式</h3>
 <p><code>逻辑表达式</code>有<code>操作符</code>：<code>||</code>和<code>&amp;&amp;</code></p>
 <ul>

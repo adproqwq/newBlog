@@ -27,7 +27,7 @@
 <meta property="og:description" content="0. 前言 本篇主要讲述在GKD规则编写中不必需，但常用的属性。 如果没有看过上一篇的同学，请看完上一篇哦！ 1. 正文 1.1 snapshotUrls snapshotUrls属性通常位于rules属性内，与matches属性同级。 snapshotUrls属性后接字符串，字符串的内容是快照的导入链接。 那么，什么是快照？又有什么作用？ 1.1.1 快照 以下对于快照的介绍来">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-01-06T05:00:23.000Z">
-<meta property="article:modified_time" content="2024-03-24T06:45:46.193Z">
+<meta property="article:modified_time" content="2024-09-22T02:58:49.665Z">
 <meta property="article:author" content="Adpro">
 <meta property="article:tag" content="GKD">
 <meta property="article:tag" content="教程">
@@ -256,7 +256,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.2k 字
+          1.9k 字
         
       </span>
     
@@ -267,7 +267,7 @@
         
         
         
-          10 分钟
+          16 分钟
         
       </span>
     
@@ -318,7 +318,7 @@
               <p id="updated-time" class="note note-info" style="display: none">
                 
                   
-                    本文最后更新于 2024-03-24T14:45:46+08:00
+                    本文最后更新于 2024-09-22T10:58:49+08:00
                   
                   
 
@@ -371,20 +371,20 @@ target="_blank" rel="noopener" href="https://github.com/Snoopy1866/blogs/blob/ma
         snapshotUrls<span class="token operator">:</span> '快照链接'<span class="token punctuation">,</span>
     <span class="token punctuation">]</span>
 <span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div></figure>
-<h2 id="quickfind">1.2 quickFind</h2>
-<p><code>quickFind</code>属性需要搭配<code>网页审查工具</code>使用。</p>
+<h2 id="fastquery">1.2 fastQuery</h2>
+<p><code>fastQuery</code>属性需要搭配<code>网页审查工具</code>使用。</p>
 <p>关于<code>网页审查工具</code>，可以前往@Snoopy1866编写的<a
 target="_blank" rel="noopener" href="https://github.com/Snoopy1866/blogs/blob/main/software/gkd/gkd-rule-tutorial/gkd-rule-tutorial.md">教程</a>处查看。</p>
 <h3 id="格式-1">1.2.1 格式</h3>
-<p><code>quickFind</code>属性的接受的值的类型为：<code>boolean</code>类型，</p>
+<p><code>fastQuery</code>属性的接受的值的类型为：<code>boolean</code>类型，</p>
 <p>即：<code>true</code>或<code>false</code>，</p>
 <p>使用方法如下：</p>
-<figure><div class="code-wrapper"><pre class="line-numbers language-json" data-language="json"><code class="language-json">quickFind<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure>
-<p><strong>注意：当<code>quickFind</code>的值为<code>false</code>时，<code>quickFind</code>属性应省略不写</strong></p>
+<figure><div class="code-wrapper"><pre class="line-numbers language-json" data-language="json"><code class="language-json">fastQuery<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure>
+<p><strong>注意：当<code>fastQuery</code>的值为<code>false</code>时，<code>fastQuery</code>属性应省略不写</strong></p>
 <h3 id="说明">1.2.2 说明</h3>
-<p>关于<code>quickFind</code>属性的说明：</p>
-<h4 id="什么时候使用quickfind属性">1.2.2.1
-什么时候使用quickFind属性？</h4>
+<p>关于<code>fastQuery</code>属性的说明：</p>
+<h4 id="什么时候使用fastquery属性">1.2.2.1
+什么时候使用<code>fastQuery</code>属性？</h4>
 <p>当<code>rules</code>属性内的规则的满足下列条件：</p>
 <p><code>末尾属性选择器</code>的<code>第一个属性选择表达式</code>符合下面的结构之一的选择器</p>
 <ul>
@@ -395,15 +395,40 @@ target="_blank" rel="noopener" href="https://github.com/Snoopy1866/blogs/blob/ma
 <li><code>[text*='abc']</code></li>
 <li><code>[text$='abc']</code></li>
 </ul>
-<p>比如 <code>A &gt; B + C[id='x'][childCount=2]</code> 符合, 但
-<code>A &gt; B + C[childCount=2][id='x']</code> 不符合</p>
-<p>并且<code>网页审查工具</code>出现<code>可快速查找</code>提示（即一个对勾）时，可以使用<code>quickFind</code>属性。</p>
-<h4 id="quickfind属性的位置">1.2.2.2 quickFind属性的位置</h4>
+<p>或者使用<code>||</code>将它们连接形成的逻辑表达式也符合条件，即如下格式：</p>
+<ul>
+<li><code>[id='abc' || id='abc2']</code></li>
+<li><code>[id='abc' || vid='abc' || text='abc' || text^='abc' || text*='abc' || text$='abc']</code></li>
+</ul>
+<p>下面给出实际示例：✅表示符合格式, ❎表示不符合格式</p>
+<ul>
+<li><code>A &gt; B + C[id='x'][childCount=2]</code> ✅</li>
+<li><code>A &gt; B + C[childCount=2][id='x']</code> ❎</li>
+<li><code>A &gt; B + C[id='x' || text='manbaout' || text*='ikun'][childCount=2]</code>
+✅</li>
+<li><code>A &gt; B + C[childCount=2][id='x' || text='manbaout' || text*='ikun']</code>
+❎</li>
+</ul>
+<p>这样一个选择器只能在右侧使用快速查询，为了在中间的子选择器也能使用</p>
+<p>额外规定如果属性选择器如果符合上面格式并且右侧是<code>&lt;&lt;n</code>，也能在局部使用快速查找</p>
+<p>示例：<code>A &gt; B + C[id='x'][childCount=2] &lt;&lt;n D</code>中的<code>C[id='x'][childCount=2] &lt;&lt;n</code>可以使用局部快速查找</p>
+<p>下面给出满足局部查询优化的示例：✅表示符合格式, ❎表示不符合格式</p>
+<ul>
+<li><code>A &gt; B + C[id='x'][childCount=2] &lt;&lt;n D</code> ✅</li>
+<li><code>A &gt; B + C[childCount=2][id='x'] &lt;&lt;n D</code> ❎</li>
+</ul>
+<p>上面介绍的是只有一个局部选择器的情况，下面给出多个局部快速查找的的示例：</p>
+<p>如<code>A &gt; C[id='x'] &lt;&lt;n D[id='y'] &lt;&lt;n E</code>，其中的<code>C[id='x'] &lt;&lt;n</code>和<code>D[id='y'] &lt;&lt;n</code>都可以使用局部快速查找</p>
+<p>而且只有<code>网页审查工具</code>出现<code>可快速查找</code>提示（即一个对勾）时，可以使用<code>fastQuery</code>属性。</p>
+<p><strong>注意：如果选择器不存在满足快速查找的格式,
+<code>fastQuery</code>是否开启都不影响查询复杂度</strong></p>
+<h4 id="fastquery属性的位置">1.2.2.2
+<code>fastQuery</code>属性的位置</h4>
 <ol type="1">
-<li><p>当<code>quickFind</code>属性与<code>rules</code>属性同级时，该规则组的所有规则全部使用<code>quickFind</code>。</p>
-<p>可以理解为：在该规则组下全局开启<code>quickFind</code>。</p></li>
-<li><p>当<code>quickFind</code>属性位于<code>rules</code>属性内的其中一个对象中时，仅对该<code>子规则集</code>开启<code>quickFind</code>。</p>
-<p>可以理解为：局部使用<code>quickFind</code></p></li>
+<li><p>当<code>fastQuery</code>属性与<code>rules</code>属性同级时，该规则组的所有规则全部使用<code>fastQuery</code>。</p>
+<p>可以理解为：在该规则组下全局开启<code>fastQuery</code>。</p></li>
+<li><p>当<code>fastQuery</code>属性位于<code>rules</code>属性内的其中一个对象中时，仅对该<code>子规则集</code>开启<code>fastQuery</code>。</p>
+<p>可以理解为：局部使用<code>fastQuery</code></p></li>
 </ol>
 <h2 id="activityids">1.3 activityIds</h2>
 <p><code>activityIds</code>属性需要搭配<code>网页审查工具</code>使用。</p>
@@ -432,13 +457,13 @@ target="_blank" rel="noopener" href="https://github.com/Snoopy1866/blogs/blob/ma
     ...
 <span class="token punctuation">]</span><span class="token punctuation">,</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></div></figure></p>
 <h4 id="说明-1">1.3.2.3 说明</h4>
-<p>类比<code>quickFind</code>属性，</p>
+<p>类比<code>fastQuery</code>属性，</p>
 <ol type="1">
 <li><p>当<code>activityIds</code>属性与<code>rules</code>属性同级时，该规则组的所有规则全部在<code>activityIds</code>规定的activity中生效。</p></li>
 <li><p>当<code>activityIds</code>属性位于<code>rules</code>属性内的其中一个对象中时，在仅是该<code>子规则集</code>在<code>activityIds</code>规定的activity中生效。</p></li>
 </ol>
 <h2 id="resetmatch">1.4 resetMatch</h2>
-<p><code>resetMatch</code>属性接受一个string类型的参数。</p>
+<p><code>resetMatch</code>属性接受一个<code>string</code>类型的参数。</p>
 <p>可选参数为：<code>app</code>和<code>activity</code>。默认为<code>activity</code>。</p>
 <h3 id="格式-3">1.4.1 格式</h3>
 <figure><div class="code-wrapper"><pre class="line-numbers language-json5" data-language="json5"><code class="language-json5"><span class="token property unquoted">resetMatch</span><span class="token operator">:</span> <span class="token string">'app'</span><span class="token punctuation">,</span>
@@ -462,7 +487,33 @@ target="_blank" rel="noopener" href="https://github.com/Snoopy1866/blogs/blob/ma
     <span class="token property unquoted">rules</span><span class="token operator">:</span> <span class="token string">''</span><span class="token punctuation">,</span>
 <span class="token punctuation">&#125;</span><span class="token punctuation">,</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></div></figure>
 <p>完全等价，我们一般会选择下方的写法。</p>
+<h4 id="位置">1.4.2.3 位置</h4>
+<p>类比<code>fastQuery</code>属性，</p>
+<ol type="1">
+<li><p>当<code>resetMatch</code>属性与<code>rules</code>属性同级时，该规则组的所有规则全部使用<code>resetMatch</code>的设置。</p></li>
+<li><p>当<code>resetMatch</code>属性位于<code>rules</code>属性内的其中一个对象中时，在仅是该<code>子规则集</code>使用<code>resetMatch</code>的设置。</p></li>
+</ol>
 <h2 id="matchtime">1.5 matchTime</h2>
+<p><code>matchTime</code>属性接受一个<code>Interger</code>类型的参数。</p>
+<p>其参数含义为：规则匹配时间，使用的单位是毫秒。</p>
+<p>那么为什么需要这么一个属性呢？</p>
+<h3 id="作用-1">1.5.1 作用</h3>
+<p>我们看一下官方对其的说明：</p>
+<blockquote>
+<p>规则匹配时间，此规则参与查询屏幕节点时，等待一段时间，休眠此规则
+例如某些应用的<code>开屏广告</code>的<code>activityId</code>容易误触/太广泛，而开屏广告几乎只在应用切出来时出现，设置一个有限匹配时间能避免后续的误触</p>
+</blockquote>
+<p>可以看到，其是为了防止误触而出现的一个属性。</p>
+<p>一般来说：我们仅会在<code>开屏广告</code>类的规则使用到它，但是在特殊情况下，其他分类的规则也会使用。</p>
+<h3 id="格式-4">1.5.2 格式</h3>
+<figure><div class="code-wrapper"><pre class="line-numbers language-json5" data-language="json5"><code class="language-json5"><span class="token property unquoted">matchTime</span><span class="token operator">:</span> <span class="token number">10000</span><span class="token punctuation">,</span> <span class="token comment">// 设置为 10000 是最常见的</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure>
+<h3 id="说明-3">1.5.3 说明</h3>
+<p>类比<code>fastQuery</code>属性，</p>
+<ol type="1">
+<li><p>当<code>matchTime</code>属性与<code>rules</code>属性同级时，该规则组的所有规则全部使用<code>matchTime</code>的设置。</p></li>
+<li><p>当<code>matchTime</code>属性位于<code>rules</code>属性内的其中一个对象中时，在仅是该<code>子规则集</code>使用<code>matchTime</code>的设置。</p></li>
+</ol>
+<h2 id="actionmaximum">1.6 actionMaximum</h2>
 <p>--TODO--</p>
 
                 

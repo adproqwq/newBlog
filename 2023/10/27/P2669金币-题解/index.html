@@ -19,15 +19,15 @@
   <meta name="author" content="Adpro">
   <meta name="keywords" content="">
   
-    <meta name="description" content="题目P2669 [NOIP2015 普及组] 金币题目背景NOIP2015 普及组 T1 题目描述国王将金币作为工资，发放给忠诚的骑士。第一天，骑士收到一枚金币；之后两天（第二天和第三天），每天收到两枚金币；之后三天（第四、五、六天），每天收到三枚金币；之后四天（第七、八、九、十天），每天收到四枚金币……；这种工资发放模式会一直这样延续下去：当连续 n 天每天收到 n 枚金币后，骑士会在之后的连续">
+    <meta name="description" content="题目 P2669 [NOIP2015 普及组] 金币 题目背景 NOIP2015 普及组 T1 题目描述 国王将金币作为工资，发放给忠诚的骑士。第一天，骑士收到一枚金币；之后两天（第二天和第三天），每天收到两枚金币；之后三天（第四、五、六天），每天收到三枚金币；之后四天（第七、八、九、十天），每天收到四枚金币……；这种工资发放模式会一直这样延续下去：当连续 n 天每天收到 n 枚金币后，骑士会在之">
 <meta property="og:type" content="article">
 <meta property="og:title" content="P2669金币-题解">
 <meta property="og:url" content="https://blog.adproqwq.top/2023/10/27/P2669%E9%87%91%E5%B8%81-%E9%A2%98%E8%A7%A3/index.html">
 <meta property="og:site_name" content="AdproのBlog">
-<meta property="og:description" content="题目P2669 [NOIP2015 普及组] 金币题目背景NOIP2015 普及组 T1 题目描述国王将金币作为工资，发放给忠诚的骑士。第一天，骑士收到一枚金币；之后两天（第二天和第三天），每天收到两枚金币；之后三天（第四、五、六天），每天收到三枚金币；之后四天（第七、八、九、十天），每天收到四枚金币……；这种工资发放模式会一直这样延续下去：当连续 n 天每天收到 n 枚金币后，骑士会在之后的连续">
+<meta property="og:description" content="题目 P2669 [NOIP2015 普及组] 金币 题目背景 NOIP2015 普及组 T1 题目描述 国王将金币作为工资，发放给忠诚的骑士。第一天，骑士收到一枚金币；之后两天（第二天和第三天），每天收到两枚金币；之后三天（第四、五、六天），每天收到三枚金币；之后四天（第七、八、九、十天），每天收到四枚金币……；这种工资发放模式会一直这样延续下去：当连续 n 天每天收到 n 枚金币后，骑士会在之">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-10-27T15:37:55.000Z">
-<meta property="article:modified_time" content="2023-10-27T16:39:44.683Z">
+<meta property="article:modified_time" content="2024-09-22T01:54:19.078Z">
 <meta property="article:author" content="Adpro">
 <meta property="article:tag" content="洛谷">
 <meta property="article:tag" content="题解">
@@ -51,6 +51,8 @@
   <link  rel="stylesheet" href="https://lib.baomitu.com/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css" />
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/KaTeX/0.16.2/katex.min.css" />
 
 
 
@@ -257,7 +259,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          465 字
+          462 字
         
       </span>
     
@@ -319,7 +321,7 @@
               <p id="updated-time" class="note note-info" style="display: none">
                 
                   
-                    本文最后更新于 2023-10-28T00:39:44+08:00
+                    本文最后更新于 2024-09-22T09:54:19+08:00
                   
                   
 
@@ -329,23 +331,33 @@
             
               <div class="markdown-body">
                 
-                <h1 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h1><h2 id="P2669-NOIP2015-普及组-金币"><a href="#P2669-NOIP2015-普及组-金币" class="headerlink" title="P2669 [NOIP2015 普及组] 金币"></a>P2669 [NOIP2015 普及组] 金币</h2><h3 id="题目背景"><a href="#题目背景" class="headerlink" title="题目背景"></a>题目背景</h3><p>NOIP2015 普及组 T1</p>
-<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>国王将金币作为工资，发放给忠诚的骑士。第一天，骑士收到一枚金币；之后两天（第二天和第三天），每天收到两枚金币；之后三天（第四、五、六天），每天收到三枚金币；之后四天（第七、八、九、十天），每天收到四枚金币……；这种工资发放模式会一直这样延续下去：当连续 n 天每天收到 n 枚金币后，骑士会在之后的连续 n+1 天里，每天收到 n+1 枚金币。</p>
+                <h1>题目</h1>
+<h2 id="P2669-NOIP2015-普及组-金币">P2669 [NOIP2015 普及组] 金币</h2>
+<h3 id="题目背景">题目背景</h3>
+<p>NOIP2015 普及组 T1</p>
+<h3 id="题目描述">题目描述</h3>
+<p>国王将金币作为工资，发放给忠诚的骑士。第一天，骑士收到一枚金币；之后两天（第二天和第三天），每天收到两枚金币；之后三天（第四、五、六天），每天收到三枚金币；之后四天（第七、八、九、十天），每天收到四枚金币……；这种工资发放模式会一直这样延续下去：当连续 n 天每天收到 n 枚金币后，骑士会在之后的连续 n+1 天里，每天收到 n+1 枚金币。</p>
 <p>请计算在前 k 天里，骑士一共获得了多少金币。</p>
-<h3 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h3><p>一个正整数 k，表示发放金币的天数。</p>
-<h3 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h3><p>一个正整数，即骑士收到的金币数。</p>
-<h3 id="样例-1"><a href="#样例-1" class="headerlink" title="样例 #1"></a>样例 #1</h3><h4 id="样例输入-1"><a href="#样例输入-1" class="headerlink" title="样例输入 #1"></a>样例输入 #1</h4><figure><div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">6<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure>
-
-<h4 id="样例输出-1"><a href="#样例输出-1" class="headerlink" title="样例输出 #1"></a>样例输出 #1</h4><figure><div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">14<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure>
-
-<h3 id="样例-2"><a href="#样例-2" class="headerlink" title="样例 #2"></a>样例 #2</h3><h4 id="样例输入-2"><a href="#样例输入-2" class="headerlink" title="样例输入 #2"></a>样例输入 #2</h4><figure><div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">1000<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure>
-
-<h4 id="样例输出-2"><a href="#样例输出-2" class="headerlink" title="样例输出 #2"></a>样例输出 #2</h4><figure><div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">29820<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure>
-
-<h3 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h3><p><strong>【样例 1 说明】</strong></p>
-<p>骑士第一天收到一枚金币；第二天和第三天，每天收到两枚金币；第四、五、六天，每天收到三枚金币。因此一共收到 1+2+2+3+3+3&#x3D;14 枚金币。</p>
+<h3 id="输入格式">输入格式</h3>
+<p>一个正整数 k，表示发放金币的天数。</p>
+<h3 id="输出格式">输出格式</h3>
+<p>一个正整数，即骑士收到的金币数。</p>
+<h3 id="样例-1">样例 #1</h3>
+<h4 id="样例输入-1">样例输入 #1</h4>
+<figure><div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">6<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure>
+<h4 id="样例输出-1">样例输出 #1</h4>
+<figure><div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">14<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure>
+<h3 id="样例-2">样例 #2</h3>
+<h4 id="样例输入-2">样例输入 #2</h4>
+<figure><div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">1000<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure>
+<h4 id="样例输出-2">样例输出 #2</h4>
+<figure><div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">29820<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure>
+<h3 id="提示">提示</h3>
+<p><strong>【样例 1 说明】</strong></p>
+<p>骑士第一天收到一枚金币；第二天和第三天，每天收到两枚金币；第四、五、六天，每天收到三枚金币。因此一共收到 1+2+2+3+3+3=14 枚金币。</p>
 <p>对于 100% 的数据，$$1\le k\le 10^4$$。</p>
-<h1 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h1><figure><div class="code-wrapper"><pre class="line-numbers language-python" data-language="python"><code class="language-python">k <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+<h1>分析</h1>
+<figure><div class="code-wrapper"><pre class="line-numbers language-python" data-language="python"><code class="language-python">k <span class="token operator">=</span> <span class="token builtin">int</span><span class="token punctuation">(</span><span class="token builtin">input</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 a <span class="token operator">=</span> <span class="token number">1</span>
 <span class="token builtin">sum</span> <span class="token operator">=</span> <span class="token number">1</span>
 ans <span class="token operator">=</span> <span class="token number">0</span>
@@ -357,14 +369,13 @@ ans <span class="token operator">=</span> <span class="token number">0</span>
     <span class="token keyword">else</span><span class="token punctuation">:</span>
         <span class="token builtin">sum</span><span class="token operator">+=</span><span class="token number">1</span>
 <span class="token keyword">print</span><span class="token punctuation">(</span>ans<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div></figure>
-
 <p>我们可以通过定义一个 a，来表示第 i 天应该发放的工资数。</p>
 <blockquote>
 <p>当连续 n 天每天收到 n 枚金币后，骑士会在之后的连续 n+1 天里，每天收到 n+1 枚金币。</p>
 </blockquote>
 <p>这段话概括起来即是：骑士获得 a 个金币的工资持续的天数是 a 天。</p>
 <p>那么，我们可以通过 sum 来计算当前是每天拿 a 个金币的第几天。</p>
-<p>当 sum &#x3D;&#x3D; a 时，就是下一天工资就需要加多1个金币。</p>
+<p>当 sum == a 时，就是下一天工资就需要加多1个金币。</p>
 
                 
               </div>
@@ -549,7 +560,6 @@ ans <span class="token operator">=</span> <span class="token number">0</span>
 
   
   
-
 
 
 
@@ -804,49 +814,6 @@ ans <span class="token operator">=</span> <span class="token number">0</span>
 
 
   <script>Fluid.plugins.imageCaption();</script>
-
-  
-      <script>
-        if (!window.MathJax) {
-          window.MathJax = {
-            tex    : {
-              inlineMath: { '[+]': [['$', '$']] }
-            },
-            loader : {
-              load: ['ui/lazy']
-            },
-            options: {
-              renderActions: {
-                insertedScript: [200, () => {
-                  document.querySelectorAll('mjx-container').forEach(node => {
-                    let target = node.parentNode;
-                    if (target.nodeName.toLowerCase() === 'li') {
-                      target.parentNode.classList.add('has-jax');
-                    }
-                  });
-                }, '', false]
-              }
-            }
-          };
-        } else {
-          MathJax.startup.document.state(0);
-          MathJax.texReset();
-          MathJax.typeset();
-          MathJax.typesetPromise();
-        }
-
-        Fluid.events.registerRefreshCallback(function() {
-          if ('MathJax' in window && MathJax.startup.document && typeof MathJax.startup.document.state === 'function') {
-            MathJax.startup.document.state(0);
-            MathJax.texReset();
-            MathJax.typeset();
-            MathJax.typesetPromise();
-          }
-        });
-      </script>
-    
-
-  <script  src="https://lib.baomitu.com/mathjax/3.2.2/es5/tex-mml-chtml.js" ></script>
 
   <script  src="./../../../../../js/local-search.js" ></script>
 

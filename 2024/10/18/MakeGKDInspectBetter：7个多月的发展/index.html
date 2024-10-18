@@ -19,24 +19,25 @@
   <meta name="author" content="Adpro">
   <meta name="keywords" content="">
   
-    <meta name="description" content="Adpro订阅在2024年5月13日，迎来了终点。  Adpro订阅诞生于2024年1月28日。那时，GKD默认订阅宣布停止维护，我用了一个小时（可能更长，也可能更短），fork了仓库，修改了配置，迁移了尚未合并的规则，发布了v0版本。 维护期间，也帮助了一些原来的规则贡献者搭建了第三方订阅，包括aoguai、AIsouler订阅。 在维护订阅的同时，我新建了GKD_THS_List仓库，">
+    <meta name="description" content="0. 写在前面 MakeGKDInspectBetter，或者说更熟悉的：GKD网页审查工具增强脚本， 是一个提高GKD网页审查工具使用体验的用户脚本。 它可以被绝大多数的用户脚本加载器加载，包括但不限于：TemperMonkey、ScriptCat。 其最初版本诞生于2024年3月3日，彼时它的名字仍然叫做：GKD网页审查工具复制增强。 这篇博文，主要总结下该脚本的发展历程，以及部分代">
 <meta property="og:type" content="article">
-<meta property="og:title" content="关于本人GKD订阅终止维护的通知">
-<meta property="og:url" content="https://blog.adproqwq.top/2024/05/14/%E5%85%B3%E4%BA%8E%E6%9C%AC%E4%BA%BAGKD%E8%AE%A2%E9%98%85%E7%BB%88%E6%AD%A2%E7%BB%B4%E6%8A%A4%E7%9A%84%E9%80%9A%E7%9F%A5/index.html">
+<meta property="og:title" content="MakeGKDInspectBetter：7个多月的发展">
+<meta property="og:url" content="https://blog.adproqwq.top/2024/10/18/MakeGKDInspectBetter%EF%BC%9A7%E4%B8%AA%E5%A4%9A%E6%9C%88%E7%9A%84%E5%8F%91%E5%B1%95/index.html">
 <meta property="og:site_name" content="AdproのBlog">
-<meta property="og:description" content="Adpro订阅在2024年5月13日，迎来了终点。  Adpro订阅诞生于2024年1月28日。那时，GKD默认订阅宣布停止维护，我用了一个小时（可能更长，也可能更短），fork了仓库，修改了配置，迁移了尚未合并的规则，发布了v0版本。 维护期间，也帮助了一些原来的规则贡献者搭建了第三方订阅，包括aoguai、AIsouler订阅。 在维护订阅的同时，我新建了GKD_THS_List仓库，">
+<meta property="og:description" content="0. 写在前面 MakeGKDInspectBetter，或者说更熟悉的：GKD网页审查工具增强脚本， 是一个提高GKD网页审查工具使用体验的用户脚本。 它可以被绝大多数的用户脚本加载器加载，包括但不限于：TemperMonkey、ScriptCat。 其最初版本诞生于2024年3月3日，彼时它的名字仍然叫做：GKD网页审查工具复制增强。 这篇博文，主要总结下该脚本的发展历程，以及部分代">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2024-05-14T07:34:17.000Z">
-<meta property="article:modified_time" content="2024-05-14T08:13:55.719Z">
+<meta property="article:published_time" content="2024-10-18T13:44:12.000Z">
+<meta property="article:modified_time" content="2024-10-18T16:00:24.635Z">
 <meta property="article:author" content="Adpro">
 <meta property="article:tag" content="GKD">
+<meta property="article:tag" content="GKD 网页审查工具">
 <meta name="twitter:card" content="summary_large_image">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>关于本人GKD订阅终止维护的通知 - AdproのBlog</title>
+  <title>MakeGKDInspectBetter：7个多月的发展 - AdproのBlog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -227,7 +228,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="关于本人GKD订阅终止维护的通知"></span>
+            <span id="subtitle" data-typed-text="MakeGKDInspectBetter：7个多月的发展"></span>
           
         </div>
 
@@ -243,8 +244,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-05-14 15:34" pubdate>
-          2024-05-14
+        <time datetime="2024-10-18 21:44" pubdate>
+          2024-10-18
         </time>
       </span>
     
@@ -255,7 +256,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          410 字
+          1.4k 字
         
       </span>
     
@@ -266,7 +267,7 @@
         
         
         
-          4 分钟
+          12 分钟
         
       </span>
     
@@ -312,12 +313,12 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">关于本人GKD订阅终止维护的通知</h1>
+            <h1 id="seo-header">MakeGKDInspectBetter：7个多月的发展</h1>
             
               <p id="updated-time" class="note note-info" style="display: none">
                 
                   
-                    本文最后更新于 2024-05-14T16:13:55+08:00
+                    本文最后更新于 2024-10-19T00:00:24+08:00
                   
                   
 
@@ -327,31 +328,128 @@
             
               <div class="markdown-body">
                 
-                <p>Adpro订阅在2024年5月13日，迎来了终点。</p>
-<hr />
-<p>Adpro订阅诞生于2024年1月28日。那时，GKD默认订阅宣布停止维护，我用了一个小时（可能更长，也可能更短），fork了仓库，修改了配置，迁移了尚未合并的规则，发布了v0版本。</p>
-<p>维护期间，也帮助了一些原来的规则贡献者搭建了第三方订阅，包括aoguai、AIsouler订阅。</p>
-<p>在维护订阅的同时，我新建了<a
-target="_blank" rel="noopener" href="https://github.com/Adpro-Team/GKD_THS_List"><code>GKD_THS_List</code></a>仓库，收录了不少的第三方订阅。开发了现在的GKDTool网页端（在默认订阅时期开发，后来发展出了安卓端，又用Vue重构写了GKDTool
-2.0）、开发了李跳跳规则转GKD规则的工具（从开始的命令行，发展到了网页端）。</p>
-<p>可以说，维护订阅的将近4个月，我承担了以上所有工具的维护，同时还要维护订阅。</p>
-<p>也是由于此，可以发现，Adpro订阅开始同步AIsouler订阅，没有自己的更新。</p>
-<p>这种情况的出现，实际上也让Adpro订阅名存实亡。</p>
-<p>所以，Adpro订阅仓库归档，不再维护。</p>
-<p>如果是群友，可能看过我说的这句话：</p>
+                <h1 id="写在前面">0. 写在前面</h1>
+<p>MakeGKDInspectBetter，或者说更熟悉的：GKD网页审查工具增强脚本，</p>
+<p>是一个提高GKD网页审查工具使用体验的用户脚本。</p>
+<p>它可以被绝大多数的用户脚本加载器加载，包括但不限于：<code>TemperMonkey</code>、<code>ScriptCat</code>。</p>
+<p>其最初版本诞生于2024年3月3日，彼时它的名字仍然叫做：GKD网页审查工具<strong>复制</strong>增强。</p>
+<p>这篇博文，主要总结下该脚本的发展历程，以及部分代码的讲解。</p>
+<p>该脚本的发展历程，我觉得可以分为三个阶段：<code>按钮监听阶段</code>、<code>复制监听阶段</code>以及<code>大杂烩阶段</code>。</p>
+<h1 id="发展历程">1. 发展历程</h1>
+<h2 id="按钮监听阶段">1.1 按钮监听阶段</h2>
+<p>得益于<code>Greasyfork</code>的更新记录，我们得已看到最初版的脚本是怎么样的：</p>
 <figure>
 <img
-src="https://cdn.jsdelivr.net/gh/adproqwq/picx-images-hosting@master/言论.8ojil6ujxt.png" srcset="./img/loading.gif" lazyload
-alt="言论" />
-<figcaption aria-hidden="true">言论</figcaption>
+src="https://cdn.jsdelivr.net/gh/adproqwq/picx-images-hosting@master/MakeGKDInspectBetter-1.png" srcset="./img/loading.gif" lazyload
+alt="初版代码" />
+<figcaption aria-hidden="true">初版代码</figcaption>
 </figure>
-<p>我想说的是，我从来没有想过能达到这个目标，所以我说了这句话。</p>
-<p>但这并不是我终止维护的主要原因。原因在上面已经说得很清楚了。</p>
-<p>在此也要说明，此次的终止维护，完全出于个人原因，没有任何外部因素。</p>
-<p>就这样吧。</p>
-<p>写于2024.5.14</p>
-<hr />
-<p>其它的工具不会终止维护。</p>
+<p>可以看到，初代脚本通过<code>MutationObserver</code>去检测复制按钮是否出现并监听其点击事件去显示菜单，</p>
+<p>功能也只有修改规则名称和描述。</p>
+<p>那么为什么需要去检测按钮是否出现呢？</p>
+<p>是因为GKD网页审查工具使用<code>Vue</code>去编写，DOM元素并不是进入网页就加载的。</p>
+<p>在3月3日和3月4日进行了多次的迭代，使用<code>layui</code>美化了界面，</p>
+<p>同时对监听按钮事件的方法进行了一次迭代：</p>
+<figure>
+<img
+src="https://cdn.jsdelivr.net/gh/adproqwq/picx-images-hosting@master/MakeGKDInspectBetter-2.png" srcset="./img/loading.gif" lazyload
+alt="1.0.0" />
+<figcaption aria-hidden="true">1.0.0</figcaption>
+</figure>
+<p>可以看到，在1.0.0版本使用了<code>document.onreadystatechange</code>。</p>
+<p>在这个版本中，给每个复制按钮附加了点击事件，去弹出菜单。</p>
+<p>后续的这方面的修改基本都是这两种方法的混合使用，和缝缝补补，在此不作赘述。</p>
+<h2 id="复制监听阶段">1.2 复制监听阶段</h2>
+<p>该阶段开始于4月24日更新的1.5.0版本：</p>
+<figure>
+<img
+src="https://cdn.jsdelivr.net/gh/adproqwq/picx-images-hosting@master/MakeGKDInspectBetter-3.png" srcset="./img/loading.gif" lazyload
+alt="1.5.0" />
+<figcaption aria-hidden="true">1.5.0</figcaption>
+</figure>
+<p>可以看到，这时候已经使用了覆写函数的方式去实现复制的监听。</p>
+<p>通过查看GKD网页审查工具的源代码可知，复制使用的是<code>navigator.clipboard.writeText</code>函数，</p>
+<p>所以我们通过覆写该函数就可以实现复制的监听，从而摆脱低效的DOM节点监听。</p>
+<p>事实上，直到如今依然使用的是复制监听的方法。</p>
+<p>只不过，从8月2日提交的1.6.4版本，将原来的覆写函数方式，修改为了更优雅的写法：<code>Proxy</code>与<code>Reflect</code>的配合写法：</p>
+<figure>
+<img
+src="https://cdn.jsdelivr.net/gh/adproqwq/picx-images-hosting@master/MakeGKDInspectBetter-4.png" srcset="./img/loading.gif" lazyload
+alt="1.6.4" />
+<figcaption aria-hidden="true">1.6.4</figcaption>
+</figure>
+<p>使用<code>Proxy</code>代理<code>navigator.clipboard.writeText</code>函数，</p>
+<p>使用<code>Reflect</code>在<code>Proxy</code>内调用<code>navigator.clipboard.writeText</code>函数。</p>
+<p>之后不久，使用由GKD开发者<code>@lisonge</code>的一个<code>Vite</code>插件，使用Vue去重构了整个插件，将所有代码开源至<code>Github</code>，使用<code>mdui</code>重写UI界面。</p>
+<h2 id="大杂烩阶段">1.3 大杂烩阶段</h2>
+<p>从理论来讲，这一阶段其实属于复制监听阶段，但我还是将其独立出来，作为一个新的阶段。</p>
+<p>该阶段开始于8月29日。</p>
+<p>当时，除了这个脚本之外，我还另外维护了两个脚本：<code>GKD网页审查工具规则快捷搜索</code>和<code>GKD网页审查工具自动showSize</code>。</p>
+<p>在8月29日，将<code>GKD网页审查工具规则快捷搜索</code>脚本整合进了<code>GKD网页审查工具复制增强</code>脚本中，</p>
+<p>也是从这时起，这个脚本改名成了：<code>GKD网页审查工具增强</code>。</p>
+<p>正是这一次的整合，才被我称为大杂烩，也是我将其独立作为一个阶段的原因：将其他的增强性脚本统一进了一个脚本中。</p>
+<p>这是一个全新的阶段，这个阶段的版本迭代中，不断开拓出了新的增强方式，这将在下节的代码讲解中一并提到。</p>
+<h1 id="代码讲解">2. 代码讲解</h1>
+<h2 id="activityids规则复制优化">2.1 activityIds规则复制优化</h2>
+<p>为什么要讲这个？</p>
+<p>因为这是脚本第一次涉及<code>indexedDB</code>内的数据。</p>
+<p>这是其具体的实现代码：</p>
+<figure><div class="code-wrapper"><pre class="line-numbers language-typescript" data-language="typescript"><code class="language-typescript"><span class="token keyword">export</span> <span class="token keyword">const</span> simplyActivityIds <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span>snapshotId<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Promise</span><span class="token operator">&lt;</span><span class="token builtin">string</span> <span class="token operator">|</span> <span class="token boolean">false</span><span class="token operator">></span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">const</span> snapshotInfo <span class="token operator">=</span> <span class="token keyword">await</span> snapshotStorage<span class="token punctuation">.</span><span class="token generic-function"><span class="token function">getItem</span><span class="token generic class-name"><span class="token operator">&lt;</span>Snapshot<span class="token operator">></span></span></span><span class="token punctuation">(</span>snapshotId<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">if</span><span class="token punctuation">(</span>snapshotInfo<span class="token operator">?.</span>activityId<span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>snapshotInfo<span class="token operator">?.</span>activityId<span class="token punctuation">.</span><span class="token function">startsWith</span><span class="token punctuation">(</span>snapshotInfo<span class="token punctuation">.</span>appId<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>
+      <span class="token keyword">const</span> simplyActivityIds <span class="token operator">=</span> snapshotInfo<span class="token punctuation">.</span>activityId<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span>snapshotInfo<span class="token punctuation">.</span>appId<span class="token punctuation">,</span> <span class="token string">''</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token keyword">return</span> simplyActivityIds<span class="token punctuation">;</span>
+    <span class="token punctuation">&#125;</span>
+    <span class="token keyword">else</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+  <span class="token keyword">else</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div></figure>
+<p>可以看到这一句：</p>
+<figure><div class="code-wrapper"><pre class="line-numbers language-typescript" data-language="typescript"><code class="language-typescript"><span class="token keyword">const</span> snapshotInfo <span class="token operator">=</span> <span class="token keyword">await</span> snapshotStorage<span class="token punctuation">.</span><span class="token generic-function"><span class="token function">getItem</span><span class="token generic class-name"><span class="token operator">&lt;</span>Snapshot<span class="token operator">></span></span></span><span class="token punctuation">(</span>snapshotId<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></figure>
+<p>这是在读取网页审查工具存储的快照信息。</p>
+<p>整段代码主要的作用就是：判断activityId的开头是否与appId相同，若相同，则返回去除相同部分的activityId；若不相同，则返回完整的activityId。</p>
+<p>由此开始，基于修改<code>indexedDB</code>数据的<code>节点隐私打码</code>功能上线了。</p>
+<h2 id="节点隐私打码">2.2 节点隐私打码</h2>
+<p>这段代码比较复杂，所以仅节选部分作为展示、讲解。</p>
+<p>这是其核心实现代码：</p>
+<figure><div class="code-wrapper"><pre class="line-numbers language-typescript" data-language="typescript"><code class="language-typescript"><span class="token keyword">interface</span> <span class="token class-name">EditNodeOption</span> <span class="token punctuation">&#123;</span>
+  target<span class="token operator">:</span> AttrList<span class="token punctuation">;</span>
+  value<span class="token operator">:</span> PrimitiveType<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span>
+
+<span class="token keyword">export</span> <span class="token keyword">const</span> editNode <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span>snapshotId<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span> nodeId<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">,</span> options<span class="token operator">:</span> EditNodeOption<span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">Promise</span><span class="token operator">&lt;</span><span class="token builtin">boolean</span><span class="token operator">></span> <span class="token operator">=></span> <span class="token punctuation">&#123;</span>
+  <span class="token keyword">try</span><span class="token punctuation">&#123;</span>
+    <span class="token keyword">const</span> snapshotInfo <span class="token operator">=</span> <span class="token keyword">await</span> snapshotStorage<span class="token punctuation">.</span><span class="token generic-function"><span class="token function">getItem</span><span class="token generic class-name"><span class="token operator">&lt;</span>Snapshot<span class="token operator">></span></span></span><span class="token punctuation">(</span>snapshotId<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">const</span> nodes <span class="token operator">=</span> snapshotInfo<span class="token operator">!</span><span class="token punctuation">.</span>nodes<span class="token punctuation">;</span>
+    <span class="token keyword">const</span> nodeAttr <span class="token operator">=</span> nodes<span class="token punctuation">[</span>nodeId<span class="token punctuation">]</span><span class="token punctuation">.</span>attr<span class="token punctuation">;</span>
+
+    options<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span>option<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">(</span>nodeAttr<span class="token punctuation">[</span>option<span class="token punctuation">.</span>target<span class="token punctuation">]</span> <span class="token keyword">as</span> PrimitiveType<span class="token punctuation">)</span> <span class="token operator">=</span> option<span class="token punctuation">.</span>value<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    nodes<span class="token punctuation">[</span>nodeId<span class="token punctuation">]</span><span class="token punctuation">.</span>attr <span class="token operator">=</span> nodeAttr<span class="token punctuation">;</span>
+    snapshotInfo<span class="token operator">!</span><span class="token punctuation">.</span>nodes <span class="token operator">=</span> nodes<span class="token punctuation">;</span>
+
+    <span class="token keyword">await</span> snapshotStorage<span class="token punctuation">.</span><span class="token function">setItem</span><span class="token punctuation">(</span>snapshotId<span class="token punctuation">,</span> snapshotInfo<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span> <span class="token keyword">catch</span><span class="token punctuation">&#123;</span>
+    <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div></figure>
+<p>通过给<code>editNode</code>函数传入要修改的节点id和要修改的节点信息，用传入的信息覆盖原本的节点信息，达到给节点打码的效果。</p>
+<figure><div class="code-wrapper"><pre class="line-numbers language-typescript" data-language="typescript"><code class="language-typescript"><span class="token keyword">interface</span> <span class="token class-name">EditNodeOption</span> <span class="token punctuation">&#123;</span>
+  target<span class="token operator">:</span> AttrList<span class="token punctuation">;</span>
+  value<span class="token operator">:</span> PrimitiveType<span class="token punctuation">;</span>
+<span class="token punctuation">&#125;</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></div></figure>
+<p>此处的<code>target</code>为修改的属性，如：<code>text</code>、<code>desc</code>等；
+<code>value</code>则是属性的内容，需要符合<code>target</code>接受的类型。</p>
+<h1 id="写在最后">3. 写在最后</h1>
+<p>这篇文章仅作总结使用，代码的说明后续会挑选一些功能的代码继续更新。</p>
+<p>如果有人对代码有更好的优化建议，也欢迎到Github仓库发起PR。</p>
+<p>如果有人因此脚本有所启发，开发出更好用的脚本，那就再好不过了。</p>
 
                 
               </div>
@@ -366,6 +464,8 @@ alt="言论" />
       
         <a href="./tags/GKD/" class="print-no-link">#GKD</a>
       
+        <a href="./tags/GKD-%E7%BD%91%E9%A1%B5%E5%AE%A1%E6%9F%A5%E5%B7%A5%E5%85%B7/" class="print-no-link">#GKD 网页审查工具</a>
+      
     </div>
   
 </div>
@@ -376,8 +476,8 @@ alt="言论" />
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>关于本人GKD订阅终止维护的通知</div>
-      <div>https://blog.adproqwq.top/2024/05/14/关于本人GKD订阅终止维护的通知/</div>
+      <div>MakeGKDInspectBetter：7个多月的发展</div>
+      <div>https://blog.adproqwq.top/2024/10/18/MakeGKDInspectBetter：7个多月的发展/</div>
     </div>
     <div class="license-meta">
       
@@ -389,7 +489,7 @@ alt="言论" />
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2024-05-14</div>
+          <div>2024-10-18</div>
         </div>
       
       
@@ -433,18 +533,12 @@ alt="言论" />
                   <article class="post-prev col-6">
                     
                     
-                      <a href="./2024/10/18/MakeGKDInspectBetter%EF%BC%9A7%E4%B8%AA%E5%A4%9A%E6%9C%88%E7%9A%84%E5%8F%91%E5%B1%95/" title="MakeGKDInspectBetter：7个多月的发展">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">MakeGKDInspectBetter：7个多月的发展</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="./2024/05/07/%E5%85%B3%E4%BA%8E%E5%9F%9F%E5%90%8D%E8%BF%81%E7%A7%BB%E7%9A%84%E9%80%9A%E7%9F%A5/" title="关于域名迁移的通知">
-                        <span class="hidden-mobile">关于域名迁移的通知</span>
+                      <a href="./2024/05/14/%E5%85%B3%E4%BA%8E%E6%9C%AC%E4%BA%BAGKD%E8%AE%A2%E9%98%85%E7%BB%88%E6%AD%A2%E7%BB%B4%E6%8A%A4%E7%9A%84%E9%80%9A%E7%9F%A5/" title="关于本人GKD订阅终止维护的通知">
+                        <span class="hidden-mobile">关于本人GKD订阅终止维护的通知</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

@@ -5,15 +5,24 @@
     "name": "Benxp",
     "blog": "Benxpの小破站",
     "desc": "一只鸽子濒死前的幻想罢了(δωδ)」",
+    "email": "Chenmyawa@163.com",
     "color": "#26C6DA"
   },
   {
-    "url": "https://www.yunyoujun.cn",
+    "url": "https://www.yunyoujun.cn/",
     "avatar": "https://www.yunyoujun.cn/images/avatar.jpg",
     "name": "云游君",
     "blog": "云游君的小站",
     "desc": "希望能成为一个有趣的人。",
     "email": "me@yunyoujun.cn",
     "color": "#0078e7"
+  },
+  {
+    "url": "https://minimalmio.github.io/",
+    "avatar": "https://pic1.imgdb.cn/item/67be252bd0e0a243d405c223.jpg",
+    "name": "Kitahashi Sakura",
+    "blog": "北橋",
+    "desc": "Make me drifting in endless darkness...",
+    "email": "kitahashisakura@outlook.com"
   }
 ]

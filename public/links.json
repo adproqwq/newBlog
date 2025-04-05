@@ -15,7 +15,7 @@
     "blog": "云游君的小站",
     "desc": "希望能成为一个有趣的人。",
     "email": "me@yunyoujun.cn",
-    "color": "#0078e7"
+    "color": "#0078E7"
   },
   {
     "url": "https://minimalmio.github.io/",
@@ -23,7 +23,8 @@
     "name": "Kitahashi Sakura",
     "blog": "北橋",
     "desc": "Make me drifting in endless darkness...",
-    "email": "kitahashisakura@outlook.com"
+    "email": "kitahashisakura@outlook.com",
+    "color": "#ED7099"
   },
   {
     "url": "https://keqing.moe/",
@@ -31,6 +32,7 @@
     "name": "刻晴",
     "blog": "KeqingMoe's Site",
     "desc": "心有所向，日复一日，必有精进",
-    "email": "me@keqing.moe"
+    "email": "me@keqing.moe",
+    "color": "#8E78C6"
   }
 ]

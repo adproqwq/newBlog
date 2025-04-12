@@ -65,7 +65,7 @@ export default defineSiteConfig({
     {
       name: '异次元之旅',
       link: 'https://travel.moe/go.html?travel=on',
-      icon: 'ri-rocket-2-line',
+      icon: 'i-ri-rocket-2-line',
       color: '#FF1585',
     },
   ],

@@ -22,10 +22,17 @@ export default defineValaxyConfig<UserThemeConfig>({
       title: 'AdproのBlog',
     },
 
+    bg_image: {
+      enable: true,
+      url: 'https://cdn.jsdelivr.net/gh/adproqwq/picx-images-hosting@master/Miku.86tu4zvtyj.jpg',
+      dark: 'https://cdn.jsdelivr.net/gh/adproqwq/picx-images-hosting@master/Miku.86tu4zvtyj.jpg',
+      opacity: 0.5,
+    },
+
     notice: {
       enable: true,
       hideInPages: true,
-      content: '换了新框架，感觉还不错？',
+      content: '换了新背景图，但感觉夜间差点，谁给张适合夜间的？',
     },
 
     fireworks: {

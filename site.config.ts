@@ -62,6 +62,12 @@ export default defineSiteConfig({
       icon: 'i-ri-train-line',
       color: 'var(--va-c-text)',
     },
+    {
+      name: '异次元之旅',
+      link: 'https://travel.moe/go.html?travel=on',
+      icon: 'ri-rocket-2-line',
+      color: '#FF1585',
+    },
   ],
 
   search: {

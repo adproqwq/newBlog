@@ -14,6 +14,9 @@ importers:
       valaxy-addon-face:
         specifier: ^0.2.0
         version: 0.2.0
+      valaxy-addon-meting:
+        specifier: ^0.1.4
+        version: 0.1.4
       valaxy-addon-twikoo:
         specifier: ^0.0.3
         version: 0.0.3(valaxy@0.22.17(@babel/parser@7.27.0)(@nuxt/kit@3.16.2)(@types/markdown-it@14.1.2)(@types/node@22.14.0)(@vue/compiler-dom@3.5.13)(axios@1.8.4)(eslint@9.24.0(jiti@2.4.2))(postcss@8.5.3)(rollup@4.39.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
@@ -3336,6 +3339,9 @@ packages:
 
   valaxy-addon-face@0.2.0:
     resolution: {integrity: sha512-Dc8qx5WHbJgbMhMpbUmV9KSYAciWAp0xRAZERVytyvOvbjwZE0DL+yXCTHuAseetohEb0LyaOSKemVrrsS6UlQ==}
+
+  valaxy-addon-meting@0.1.4:
+    resolution: {integrity: sha512-aTOCswBIg1/MOIC1vZ7ctaZOOEueVN99tEurAxukq15kJtqyps2/XqZw7Bjvik5LNbHtZd+TzmH+vrvhA/HF5w==}
 
   valaxy-addon-twikoo@0.0.3:
     resolution: {integrity: sha512-8ISPqSF3uto8jCceaDuGzeq1utJuH3oJ3mqtz9h1lQhXkP3jwReh8Sa3bnfhHlcfCUCoNK2E5dj8CNK2tVgHpg==}
@@ -7329,6 +7335,8 @@ snapshots:
   uuid@11.1.0: {}
 
   valaxy-addon-face@0.2.0: {}
+
+  valaxy-addon-meting@0.1.4: {}
 
   valaxy-addon-twikoo@0.0.3(valaxy@0.22.17(@babel/parser@7.27.0)(@nuxt/kit@3.16.2)(@types/markdown-it@14.1.2)(@types/node@22.14.0)(@vue/compiler-dom@3.5.13)(axios@1.8.4)(eslint@9.24.0(jiti@2.4.2))(postcss@8.5.3)(rollup@4.39.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)):
     dependencies:

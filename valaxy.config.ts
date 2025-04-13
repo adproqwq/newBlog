@@ -2,6 +2,7 @@ import type { UserThemeConfig } from 'valaxy-theme-yun';
 import { defineValaxyConfig } from 'valaxy';
 import { addonTwikoo } from 'valaxy-addon-twikoo';
 import { addonFace } from 'valaxy-addon-face';
+import { addonMeting } from 'valaxy-addon-meting';
 
 // add icons what you will need
 const safelist = [
@@ -61,6 +62,16 @@ export default defineValaxyConfig<UserThemeConfig>({
   addons: [
     addonTwikoo({
       envId: 'https://twikoo.adproqwq.top',
+    }),
+    addonMeting({
+      global: true,
+      props: {
+        id: '8881355236',
+        server: 'tencent',
+        type: 'playlist',
+        auto: 'tencent',
+        theme: '#39C5BB',
+      },
     }),
     addonFace(),
   ],

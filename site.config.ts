@@ -4,6 +4,7 @@ export default defineSiteConfig({
   timezone: 'Asia/Shanghai',
   url: 'https://blog.adproqwq.top/',
   lang: 'zh-CN',
+  mode: 'light',
   title: 'AdproのBlog',
   subtitle: '喵~',
   favicon: 'https://cdn.jsdelivr.net/gh/adproqwq/picx-images-hosting@master/avatar.3uusvva7na.jpg',

@@ -29,6 +29,7 @@ declare module 'vue-router/auto-routes' {
     '/page/[page]': RouteRecordInfo<'/page/[page]', '/page/:page', { page: ParamValue<true> }, { page: ParamValue<false> }>,
     '/posts/': RouteRecordInfo<'/posts/', '/posts', Record<never, never>, Record<never, never>>,
     '/posts/关于本人GKD订阅终止维护的通知': RouteRecordInfo<'/posts/关于本人GKD订阅终止维护的通知', '/posts/关于本人GKD订阅终止维护的通知', Record<never, never>, Record<never, never>>,
+    '/posts/随笔': RouteRecordInfo<'/posts/随笔', '/posts/随笔', Record<never, never>, Record<never, never>>,
     '/posts/GKD本地订阅收录申请': RouteRecordInfo<'/posts/GKD本地订阅收录申请', '/posts/GKD本地订阅收录申请', Record<never, never>, Record<never, never>>,
     '/posts/GKD规则编写之属性-1': RouteRecordInfo<'/posts/GKD规则编写之属性-1', '/posts/GKD规则编写之属性-1', Record<never, never>, Record<never, never>>,
     '/posts/GKD规则编写之属性-2': RouteRecordInfo<'/posts/GKD规则编写之属性-2', '/posts/GKD规则编写之属性-2', Record<never, never>, Record<never, never>>,

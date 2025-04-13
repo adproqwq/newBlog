@@ -13,6 +13,7 @@ random: true
   图标链接：https://cdn.jsdelivr.net/gh/adproqwq/picx-images-hosting@master/avatar.3uusvva7na.jpg
   网站名称：AdproのBlog
   描述：Adpro的Blog，可能有有用的东西？
+  主题色：#39C5BB
 ```
 
 按照如下格式在下方留言以添加友链！

@@ -3,6 +3,7 @@ import { defineValaxyConfig } from 'valaxy';
 import { addonTwikoo } from 'valaxy-addon-twikoo';
 import { addonFace } from 'valaxy-addon-face';
 import { addonMeting } from 'valaxy-addon-meting';
+import { addonVercount } from 'valaxy-addon-vercount';
 
 // add icons what you will need
 const safelist = [
@@ -72,6 +73,9 @@ export default defineValaxyConfig<UserThemeConfig>({
         auto: 'tencent',
         theme: '#39C5BB',
       },
+    }),
+    addonVercount({
+      api: 'cn',
     }),
     addonFace(),
   ],

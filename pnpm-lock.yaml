@@ -20,6 +20,9 @@ importers:
       valaxy-addon-twikoo:
         specifier: ^0.0.3
         version: 0.0.3(valaxy@0.23.0(@babel/parser@7.27.0)(@nuxt/kit@3.16.2)(@types/markdown-it@14.1.2)(@types/node@22.14.1)(@vue/compiler-dom@3.5.13)(axios@1.8.4)(eslint@9.24.0(jiti@2.4.2))(postcss@8.5.3)(rollup@4.40.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1))
+      valaxy-addon-vercount:
+        specifier: ^0.0.6
+        version: 0.0.6
       valaxy-theme-yun:
         specifier: 0.23.0
         version: 0.23.0(vue@3.5.13(typescript@5.8.3))
@@ -573,6 +576,10 @@ packages:
 
   '@mermaid-js/parser@0.4.0':
     resolution: {integrity: sha512-wla8XOWvQAwuqy+gxiZqY+c7FokraOTHRWMsbB4AgRx9Sy7zKslNyejy7E+a77qHfey5GXw/ik3IXv/NHMJgaA==}
+
+  '@msgpack/msgpack@2.8.0':
+    resolution: {integrity: sha512-h9u4u/jiIRKbq25PM+zymTyW6bhTzELvOoUd+AvYriWOAKpLGnIamaET3pnHYoI5iYphAHBI4ayx0MehR+VVPQ==}
+    engines: {node: '>= 10'}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -2794,6 +2801,14 @@ packages:
   peberminta@0.9.0:
     resolution: {integrity: sha512-XIxfHpEuSJbITd1H3EeQwpcZbTLHc+VVr8ANI9t5sit565tsI4/xK3KWTUFE2e6QiangUkh3B0jihzmGnNrRsQ==}
 
+  peerjs-js-binarypack@2.1.0:
+    resolution: {integrity: sha512-YIwCC+pTzp3Bi8jPI9UFKO0t0SLo6xALnHkiNt/iUFmUUZG0fEEmEyFKvjsDKweiFitzHRyhuh6NvyJZ4nNxMg==}
+    engines: {node: '>= 14.0.0'}
+
+  peerjs@1.5.4:
+    resolution: {integrity: sha512-yFsoLMnurJKlQbx6kVSBpOp+AlNldY1JQS2BrSsHLKCZnq6t7saHleuHM5svuLNbQkUJXHLF3sKOJB1K0xulOw==}
+    engines: {node: '>= 14'}
+
   perfect-debounce@1.0.0:
     resolution: {integrity: sha512-xCy9V055GLEqoFaHoC1SoLIaLmWctgCUaBaWxDZ7/Zx4CTyX7cJQLJOok/orfjZAh9kEYpjJa4d0KcJmCbctZA==}
 
@@ -2986,6 +3001,9 @@ packages:
 
   scule@1.3.0:
     resolution: {integrity: sha512-6FtHJEvt+pVMIB9IBY+IcCJ6Z5f1iQnytgyfKMhDKgmzYG+TeH/wx1y3l27rshSbLiSanrR9ffZDrEsmjlQF2g==}
+
+  sdp@3.2.0:
+    resolution: {integrity: sha512-d7wDPgDV3DDiqulJjKiV2865wKsJ34YI+NDREbm+FySq6WuKOikwyNQcm+doLAZ1O6ltdO0SeKle2xMpN3Brgw==}
 
   section-matter@1.0.0:
     resolution: {integrity: sha512-vfD3pmTzGpufjScBh50YHKzEu2lxBWhVEHsNGoEXmCmn2hKGfeNLYMzCJpe8cD7gqX7TJluOVpBkAequ6dgMmA==}
@@ -3332,6 +3350,10 @@ packages:
   uri-js@4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
 
+  uuid@10.0.0:
+    resolution: {integrity: sha512-8XkAphELsDnEGrDxUOHB3RGvXz6TeuYSGEZBOjtTtPm2lwhGBjLgOzLHB63IUWfBpNucQjND6d3AOudO+H3RWQ==}
+    hasBin: true
+
   uuid@11.1.0:
     resolution: {integrity: sha512-0/A9rDy9P7cJ+8w1c9WD9V//9Wj15Ce2MPz8Ri6032usz+NfePxx5AcN3bN+r6ZL6jEo066/yNYB3tn4pQEx+A==}
     hasBin: true
@@ -3346,6 +3368,9 @@ packages:
     resolution: {integrity: sha512-8ISPqSF3uto8jCceaDuGzeq1utJuH3oJ3mqtz9h1lQhXkP3jwReh8Sa3bnfhHlcfCUCoNK2E5dj8CNK2tVgHpg==}
     peerDependencies:
       valaxy: latest
+
+  valaxy-addon-vercount@0.0.6:
+    resolution: {integrity: sha512-FqxULU81LofkpSvAzxXmdF4utV3tnKzEKAGYSGyV+i8cYJcf1s+4mbM3PtgYEeP5anLzXBAA/e4+pc0Z0h+Gbw==}
 
   valaxy-theme-yun@0.23.0:
     resolution: {integrity: sha512-2BwHzkw6ub0H36Ow8f6CnlZZtCCFOA+qZZ8BkQDIcq6EjPxWK9jTurI8ldFn3s8teDiWWRexleb98i792HuRMA==}
@@ -3529,6 +3554,10 @@ packages:
 
   webpack-virtual-modules@0.6.2:
     resolution: {integrity: sha512-66/V2i5hQanC51vBQKPH4aI8NMAcBW59FVBs+rC7eGHupMyfn34q7rZIE+ETlJ+XTevqfUhVVBgSUNSW2flEUQ==}
+
+  webrtc-adapter@9.0.3:
+    resolution: {integrity: sha512-5fALBcroIl31OeXAdd1YUntxiZl1eHlZZWzNg3U4Fn+J9/cGL3eT80YlrsWGvj2ojuz1rZr2OXkgCzIxAZ7vRQ==}
+    engines: {node: '>=6.0.0', npm: '>=3.10.0'}
 
   whatwg-encoding@3.1.1:
     resolution: {integrity: sha512-6qN4hJdMwfYBtE3YBTTHhoeuUrDBPZmbQaxWAqSALV/MeEnR5z1xd8UKud2RAkFoPkmB+hli1TZSnyi84xz1vQ==}
@@ -4185,6 +4214,8 @@ snapshots:
   '@mermaid-js/parser@0.4.0':
     dependencies:
       langium: 3.3.1
+
+  '@msgpack/msgpack@2.8.0': {}
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -6636,6 +6667,15 @@ snapshots:
 
   peberminta@0.9.0: {}
 
+  peerjs-js-binarypack@2.1.0: {}
+
+  peerjs@1.5.4:
+    dependencies:
+      '@msgpack/msgpack': 2.8.0
+      eventemitter3: 4.0.7
+      peerjs-js-binarypack: 2.1.0
+      webrtc-adapter: 9.0.3
+
   perfect-debounce@1.0.0: {}
 
   picocolors@1.1.1: {}
@@ -6841,6 +6881,8 @@ snapshots:
       xmlchars: 2.2.0
 
   scule@1.3.0: {}
+
+  sdp@3.2.0: {}
 
   section-matter@1.0.0:
     dependencies:
@@ -7264,6 +7306,8 @@ snapshots:
     dependencies:
       punycode: 2.3.1
 
+  uuid@10.0.0: {}
+
   uuid@11.1.0: {}
 
   valaxy-addon-face@0.2.0: {}
@@ -7273,6 +7317,11 @@ snapshots:
   valaxy-addon-twikoo@0.0.3(valaxy@0.23.0(@babel/parser@7.27.0)(@nuxt/kit@3.16.2)(@types/markdown-it@14.1.2)(@types/node@22.14.1)(@vue/compiler-dom@3.5.13)(axios@1.8.4)(eslint@9.24.0(jiti@2.4.2))(postcss@8.5.3)(rollup@4.40.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)):
     dependencies:
       valaxy: 0.23.0(@babel/parser@7.27.0)(@nuxt/kit@3.16.2)(@types/markdown-it@14.1.2)(@types/node@22.14.1)(@vue/compiler-dom@3.5.13)(axios@1.8.4)(eslint@9.24.0(jiti@2.4.2))(postcss@8.5.3)(rollup@4.40.0)(terser@5.39.0)(typescript@5.8.3)(yaml@2.7.1)
+
+  valaxy-addon-vercount@0.0.6:
+    dependencies:
+      peerjs: 1.5.4
+      uuid: 10.0.0
 
   valaxy-theme-yun@0.23.0(vue@3.5.13(typescript@5.8.3)):
     dependencies:
@@ -7593,6 +7642,10 @@ snapshots:
   webidl-conversions@7.0.0: {}
 
   webpack-virtual-modules@0.6.2: {}
+
+  webrtc-adapter@9.0.3:
+    dependencies:
+      sdp: 3.2.0
 
   whatwg-encoding@3.1.1:
     dependencies:

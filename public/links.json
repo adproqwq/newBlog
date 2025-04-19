@@ -58,5 +58,14 @@
     "blog": "老卡尔的旧纸箱",
     "desc": "这里存着卡尔白的过去、现在和未来",
     "color": "#6495ED"
+  },
+  {
+    "url": "https://firgt.eu.org/",
+    "avatar": "https://firgt.eu.org/images/Enderman.jpg",
+    "name": "FirgtZhong",
+    "blog": "Firgt's Blog",
+    "email": "admin@Firgt.cn",
+    "desc": "一个很懒的初中生的博客",
+    "color": "#3F1313"
   }
 ]

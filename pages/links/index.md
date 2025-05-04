@@ -1,7 +1,7 @@
 ---
 title: 我的小伙伴们
 keywords: 链接
-description: Adpro的小伙伴们
+description: Adproの小伙伴们
 links: /links.json
 random: true
 ---

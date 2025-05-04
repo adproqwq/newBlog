@@ -93,5 +93,13 @@
     "blog": "萌哩 - 萌萌的二次元美图",
     "desc": "全网精选二次元美图，提供高质量原图下载",
     "color": "#FF01B4"
+  },
+  {
+    "url": "https://www.voidval.com/",
+    "avatar": "https://bucket.voidval.com/upload/banner.jpg",
+    "name": "214233",
+    "blog": "百变哥布林的流水账",
+    "desc": "技术流水账小站",
+    "color": "#6D31AD"
   }
 ]

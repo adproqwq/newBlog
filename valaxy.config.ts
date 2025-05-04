@@ -34,7 +34,7 @@ export default defineValaxyConfig<UserThemeConfig>({
     notice: {
       enable: true,
       hideInPages: true,
-      content: '背景图现在每次刷新都是不一样的咯！',
+      content: '寂しい夏のせいにして　私は泣いてしまった',
     },
 
     fireworks: {

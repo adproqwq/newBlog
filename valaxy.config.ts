@@ -26,15 +26,15 @@ export default defineValaxyConfig<UserThemeConfig>({
 
     bg_image: {
       enable: true,
-      url: 'https://cdn.jsdelivr.net/gh/adproqwq/picx-images-hosting@master/Miku.86tu4zvtyj.jpg',
-      dark: 'https://cdn.jsdelivr.net/gh/adproqwq/picx-images-hosting@master/Miku.86tu4zvtyj.jpg',
+      url: 'https://t.alcy.cc/ycy',
+      dark: 'https://t.alcy.cc/ycy',
       opacity: 0.5,
     },
 
     notice: {
       enable: true,
       hideInPages: true,
-      content: '换了新背景图，但感觉夜间差点，谁给张适合夜间的？',
+      content: '背景图现在每次刷新都是不一样的咯！',
     },
 
     fireworks: {

@@ -38,6 +38,11 @@ onMounted(() => {
           <span class="badge-value bg-cai">20080825号</span>
         </a>
       </div>
+
+      <a href="https://icp.星.fun/id.php?keyword=20250825" target="_blank">
+        <img src="https://icp.星.fun/logo.png" width="20" height="20" style="vertical-align: middle; margin-right: 5px; display: inherit;">
+        团ICP备20250825号
+      </a>
     </div>
   </YunFooter>
 </template>

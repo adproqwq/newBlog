@@ -1,14 +1,17 @@
 <script lang="ts" setup>
 import { useAddonVercount } from 'valaxy-addon-vercount';
 import YunFooter from 'valaxy-theme-yun/components/YunFooter.vue';
+import { onMounted } from 'vue';
 
 const { site } = useAddonVercount();
 
-const wuIcpCss = document.createElement('link');
-wuIcpCss.rel = 'stylesheet';
-wuIcpCss.href = 'https://scdn.星.fun/icp.css';
+onMounted(() => {
+  const wuIcpCss = document.createElement('link');
+  wuIcpCss.rel = 'stylesheet';
+  wuIcpCss.href = 'https://scdn.星.fun/icp.css';
 
-document.head.append(wuIcpCss);
+  document.head.append(wuIcpCss);
+});
 </script>
 
 <template>

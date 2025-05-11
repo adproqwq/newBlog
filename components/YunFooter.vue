@@ -32,7 +32,7 @@ document.head.append(wuIcpCss);
       <div class="github-badge">
         <span class="badge-subject">雾备</span>
         <a style="color:#fff" href="https://icp.scfc.top/id.php?keyword=20080825" rel="external" target="_blank">
-            <span class="badge-value bg-cai">20080825号</span>
+          <span class="badge-value bg-cai">20080825号</span>
         </a>
       </div>
     </div>

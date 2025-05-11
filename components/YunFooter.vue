@@ -43,6 +43,11 @@ onMounted(() => {
         <img src="https://icp.星.fun/logo.png" width="20" height="20" style="vertical-align: middle; margin-right: 5px; display: inherit;">
         团ICP备20250825号
       </a>
+
+      <a href="https://icp.euxstudio.com/id.php?keyword=20250825" target="_blank">
+        <img src="https://icp.euxstudio.com/favicon.ico" width="20" height="20" style="vertical-align: middle; margin-right: 5px; display: inherit;">
+        云ICP备20250825号
+      </a>
     </div>
   </YunFooter>
 </template>

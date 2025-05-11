@@ -3,6 +3,12 @@ import { useAddonVercount } from 'valaxy-addon-vercount';
 import YunFooter from 'valaxy-theme-yun/components/YunFooter.vue';
 
 const { site } = useAddonVercount();
+
+const wuIcpCss = document.createElement('link');
+wuIcpCss.rel = 'stylesheet';
+wuIcpCss.href = 'https://scdn.星.fun/icp.css';
+
+document.head.append(wuIcpCss);
 </script>
 
 <template>
@@ -22,6 +28,13 @@ const { site } = useAddonVercount();
         <img src="https://icp.govs.xin/favicon.ico" width="20" height="20" style="vertical-align: middle; margin-right: 5px; display: inherit;">
         信ICP备20250825号
       </a>
+
+      <div class="github-badge">
+        <span class="badge-subject">雾备</span>
+        <a style="color:#fff" href="https://icp.scfc.top/id.php?keyword=20080825" rel="external" target="_blank">
+            <span class="badge-value bg-cai">20080825号</span>
+        </a>
+      </div>
     </div>
   </YunFooter>
 </template>

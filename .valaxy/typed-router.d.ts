@@ -35,7 +35,7 @@ declare module 'vue-router/auto-routes' {
     '/posts/GKD规则编写之属性-2': RouteRecordInfo<'/posts/GKD规则编写之属性-2', '/posts/GKD规则编写之属性-2', Record<never, never>, Record<never, never>>,
     '/posts/GKD规则编写之选择器-1': RouteRecordInfo<'/posts/GKD规则编写之选择器-1', '/posts/GKD规则编写之选择器-1', Record<never, never>, Record<never, never>>,
     '/posts/GKD规则编写之选择器-2': RouteRecordInfo<'/posts/GKD规则编写之选择器-2', '/posts/GKD规则编写之选择器-2', Record<never, never>, Record<never, never>>,
-    '/posts/MakeGKDInspectBetter：7个多月的发展': RouteRecordInfo<'/posts/MakeGKDInspectBetter：7个多月的发展', '/posts/MakeGKDInspectBetter：7个多月的发展', Record<never, never>, Record<never, never>>,
+    '/posts/MakeGKDInspectBetter：一年多的发展': RouteRecordInfo<'/posts/MakeGKDInspectBetter：一年多的发展', '/posts/MakeGKDInspectBetter：一年多的发展', Record<never, never>, Record<never, never>>,
     '/posts/P2669金币-题解': RouteRecordInfo<'/posts/P2669金币-题解', '/posts/P2669金币-题解', Record<never, never>, Record<never, never>>,
     '/tags/': RouteRecordInfo<'/tags/', '/tags', Record<never, never>, Record<never, never>>,
   }

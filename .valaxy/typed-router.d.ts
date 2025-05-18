@@ -29,6 +29,7 @@ declare module 'vue-router/auto-routes' {
     '/page/[page]': RouteRecordInfo<'/page/[page]', '/page/:page', { page: ParamValue<true> }, { page: ParamValue<false> }>,
     '/posts/': RouteRecordInfo<'/posts/', '/posts', Record<never, never>, Record<never, never>>,
     '/posts/关于本人GKD订阅终止维护的通知': RouteRecordInfo<'/posts/关于本人GKD订阅终止维护的通知', '/posts/关于本人GKD订阅终止维护的通知', Record<never, never>, Record<never, never>>,
+    '/posts/寂しい夏のせいにして 歌词+罗马音': RouteRecordInfo<'/posts/寂しい夏のせいにして 歌词+罗马音', '/posts/寂しい夏のせいにして 歌词+罗马音', Record<never, never>, Record<never, never>>,
     '/posts/随笔': RouteRecordInfo<'/posts/随笔', '/posts/随笔', Record<never, never>, Record<never, never>>,
     '/posts/哲学的基本问题和两大派别': RouteRecordInfo<'/posts/哲学的基本问题和两大派别', '/posts/哲学的基本问题和两大派别', Record<never, never>, Record<never, never>>,
     '/posts/GKD本地订阅收录申请': RouteRecordInfo<'/posts/GKD本地订阅收录申请', '/posts/GKD本地订阅收录申请', Record<never, never>, Record<never, never>>,

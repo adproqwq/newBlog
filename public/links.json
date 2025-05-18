@@ -101,5 +101,13 @@
     "blog": "百变哥布林的流水账",
     "desc": "技术流水账小站",
     "color": "#6D31AD"
+  },
+  {
+    "url": "https://blog.mnxy.eu.org",
+    "avatar": "https://fastly.jsdelivr.net/gh/MengNianxiaoyao/blogimages@main/siteicon/icon.svg",
+    "name": "梦念逍遥",
+    "blog": "梦念逍遥のBLOG",
+    "desc": "无梦之境",
+    "color": "#0078E7"
   }
 ]

@@ -54,9 +54,10 @@ onMounted(() => {
 
 <style lang="css">
 .icp {
-  white-space: nowrap;
+  display: flexbox;
 }
 .icp > * {
-  display: inline;
+  display: inline-flexbox;
+  flex-flow: row wrap;
 }
 </style>

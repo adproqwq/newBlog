@@ -37,9 +37,9 @@ onMounted(() => {
         团ICP备20250825号
       </a>
 
-      <a href="https://icp.euxstudio.com/id.php?keyword=20250825" target="_blank">
-        <img src="https://icp.euxstudio.com/favicon.ico" width="20" height="20" style="vertical-align: middle; margin-right: 5px; display: inherit;">
-        云ICP备20250825号
+      <a href="https://icp.govs.wang/id.php?keyword=20250825" target="_blank">
+        <img src="https://icp.govs.wang/favicon.ico" width="20" height="20" style="vertical-align: middle; margin-right: 5px; display: inherit;">
+        网ICP备20250825号
       </a>
 
       <div class="github-badge">

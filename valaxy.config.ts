@@ -34,7 +34,7 @@ export default defineValaxyConfig<UserThemeConfig>({
     notice: {
       enable: true,
       hideInPages: true,
-      content: '寂しい夏のせいにして　私は泣いてしまった',
+      content: '誰も何も悪くないよ　君は何も悪くはないから',
     },
 
     fireworks: {

@@ -67,10 +67,10 @@ export default defineValaxyConfig<UserThemeConfig>({
     addonMeting({
       global: true,
       props: {
-        id: '8881355236',
-        server: 'tencent',
+        id: '13761781950',
+        server: 'netease',
         type: 'playlist',
-        auto: 'tencent',
+        auto: 'netease',
         theme: '#39C5BB',
       },
     }),

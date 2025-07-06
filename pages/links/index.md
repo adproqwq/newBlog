@@ -28,4 +28,6 @@ random: true
   主题色（16进制色号！）：
 ```
 
+可能有不少友链只是单向的哦~
+
 <YunLinks :links="frontmatter.links" :random="frontmatter.random" />

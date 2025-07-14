@@ -7,10 +7,10 @@ export default defineSiteConfig({
   mode: 'light',
   title: 'AdproのBlog',
   subtitle: '喵~',
-  favicon: 'https://cdn.jsdelivr.net/gh/adproqwq/picx-images-hosting@master/avatar.3uusvva7na.jpg',
+  favicon: './avatar.jpg',
   author: {
     name: 'Adpro',
-    avatar: 'https://cdn.jsdelivr.net/gh/adproqwq/picx-images-hosting@master/avatar.3uusvva7na.jpg',
+    avatar: './avatar.jpg',
     email: 'adpro_qwq@qq.com',
     link: 'https://github.com/adproqwq',
     intro: '一个业余开发者，喜欢自己乱写东西。打音游，不过菜菜，街机主中二节奏。',

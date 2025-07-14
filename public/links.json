@@ -127,11 +127,18 @@
     "color": "#007C7A"
   },
   {
-    "url": "https://blog.crack.moe",
+    "url": "https://blog.crack.moe/",
     "avatar": "https://blog.crack.moe/img/face.jpg",
     "name": "Moe-hacker",
     "blog": "沨鸾的小窝",
     "desc": "众所周知，这里是沨鸾的个人博客～",
     "color": "#FEE4D0"
+  },
+  {
+    "url": "https://blog.sakurakooi.dev/",
+    "avatar": "https://blog.sakurakooi.dev/images/sakurakooi.png",
+    "name": "SakuraKooi",
+    "blog": "SakuraKooi's Blog",
+    "desc": "梦是幽蓝色彩 灵魂如雪纯白"
   }
 ]

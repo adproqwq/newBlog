@@ -34,7 +34,7 @@ export default defineValaxyConfig<UserThemeConfig>({
     notice: {
       enable: true,
       hideInPages: true,
-      content: '誰も何も悪くないよ　君は何も悪くはないから',
+      content: '不可測な異端の証明　画面に花が咲いて　現実に社会に反抗する　不完全な、不安定な魔法',
     },
 
     fireworks: {

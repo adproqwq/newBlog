@@ -140,5 +140,14 @@
     "name": "SakuraKooi",
     "blog": "SakuraKooi's Blog",
     "desc": "梦是幽蓝色彩 灵魂如雪纯白"
+  },
+  {
+    "url": "https://blog.mugzx.top/",
+    "avatar": "https://www.mugzx.top/api/avatar.png",
+    "name": "Mugzx",
+    "blog": "地球驿站",
+    "desc": "向上革命，向下实践",
+    "email": "me@mugzx.top",
+    "color": "#3D3DF5"
   }
 ]

@@ -42,6 +42,11 @@ onMounted(() => {
         网ICP备20250825号
       </a>
 
+      <a href="https://icp.redcha.cn/beian/ICP-2025080071.html">
+        <img src="https://icp.redcha.cn/static/picture/icplogoi.png" width="20" height="20" style="vertical-align: middle; margin-right: 5px; display: inherit;">
+        茶ICP备2025080071号
+      </a>
+
       <div class="github-badge">
         <span class="badge-subject">雾备</span>
         <a style="color:#fff" href="https://icp.wudu.ltd/id.php?keyword=20080825" rel="external" target="_blank">

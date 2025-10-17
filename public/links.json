@@ -145,7 +145,7 @@
     "url": "https://blog.mugzx.top/",
     "avatar": "https://www.mugzx.top/api/avatar.png",
     "name": "Mugzx",
-    "blog": "地球驿站",
+    "blog": "Mugzx's Blog",
     "desc": "向上革命，向下实践",
     "email": "me@mugzx.top",
     "color": "#3D3DF5"
@@ -158,5 +158,14 @@
     "desc": "我的中文个人博客 =￣ω￣=",
     "email": "hi@cdms.vip",
     "color": "#4051B5"
+  },
+  {
+    "url": "https://www.xzadudu179.top/",
+    "avatar": "https://image.179.life/images/avatar.png",
+    "name": "xzadudu179",
+    "blog": "XME-Home",
+    "desc": "xzadudu179 的太空基地",
+    "email": "Terra179@163.com",
+    "color": "#78B9FF"
   }
 ]

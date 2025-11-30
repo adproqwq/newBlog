@@ -8,7 +8,8 @@ import { addonVercount } from 'valaxy-addon-vercount';
 // add icons what you will need
 const safelist = [
   'i-ri-home-line',
-]
+  'i-ri-money-cny-circle-line',
+];
 
 /**
  * User Config
@@ -21,7 +22,7 @@ export default defineValaxyConfig<UserThemeConfig>({
   themeConfig: {
     banner: {
       enable: true,
-      title: 'AdproのBlog',
+      title: 'AoneのBlog',
     },
 
     bg_image: {
@@ -41,7 +42,26 @@ export default defineValaxyConfig<UserThemeConfig>({
       enable: false,
     },
 
+    nav: [
+      {
+        link: '/sponsor/',
+        text: '捐赠',
+        icon: 'i-ri-money-cny-circle-line',
+      },
+      {
+        link: '/links/',
+        text: '友链',
+        icon: 'i-ri-genderless-line',
+      },
+    ],
+
     pages: [
+      {
+        name: '我很可爱，请给我钱～',
+        url: '/sponsor/',
+        icon: 'i-ri-money-cny-circle-line',
+        color: '#39C5BB',
+      },
       {
         name: '我的小伙伴们',
         url: '/links/',

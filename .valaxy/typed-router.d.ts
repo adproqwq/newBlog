@@ -28,11 +28,6 @@ declare module 'vue-router/auto-routes' {
     '/links/': RouteRecordInfo<'/links/', '/links', Record<never, never>, Record<never, never>>,
     '/page/[page]': RouteRecordInfo<'/page/[page]', '/page/:page', { page: ParamValue<true> }, { page: ParamValue<false> }>,
     '/posts/': RouteRecordInfo<'/posts/', '/posts', Record<never, never>, Record<never, never>>,
-    '/posts/关于 Milthm 由单曲 Reality 计算单曲分数的函数': RouteRecordInfo<'/posts/关于 Milthm 由单曲 Reality 计算单曲分数的函数', '/posts/关于 Milthm 由单曲 Reality 计算单曲分数的函数', Record<never, never>, Record<never, never>>,
-    '/posts/关于本人GKD订阅终止维护的通知': RouteRecordInfo<'/posts/关于本人GKD订阅终止维护的通知', '/posts/关于本人GKD订阅终止维护的通知', Record<never, never>, Record<never, never>>,
-    '/posts/寂しい夏のせいにして 歌词+罗马音': RouteRecordInfo<'/posts/寂しい夏のせいにして 歌词+罗马音', '/posts/寂しい夏のせいにして 歌词+罗马音', Record<never, never>, Record<never, never>>,
-    '/posts/随笔': RouteRecordInfo<'/posts/随笔', '/posts/随笔', Record<never, never>, Record<never, never>>,
-    '/posts/哲学的基本问题和两大派别': RouteRecordInfo<'/posts/哲学的基本问题和两大派别', '/posts/哲学的基本问题和两大派别', Record<never, never>, Record<never, never>>,
     '/posts/GKD本地订阅收录申请': RouteRecordInfo<'/posts/GKD本地订阅收录申请', '/posts/GKD本地订阅收录申请', Record<never, never>, Record<never, never>>,
     '/posts/GKD规则编写之属性-1': RouteRecordInfo<'/posts/GKD规则编写之属性-1', '/posts/GKD规则编写之属性-1', Record<never, never>, Record<never, never>>,
     '/posts/GKD规则编写之属性-2': RouteRecordInfo<'/posts/GKD规则编写之属性-2', '/posts/GKD规则编写之属性-2', Record<never, never>, Record<never, never>>,
@@ -40,6 +35,132 @@ declare module 'vue-router/auto-routes' {
     '/posts/GKD规则编写之选择器-2': RouteRecordInfo<'/posts/GKD规则编写之选择器-2', '/posts/GKD规则编写之选择器-2', Record<never, never>, Record<never, never>>,
     '/posts/MakeGKDInspectBetter：一年多的发展': RouteRecordInfo<'/posts/MakeGKDInspectBetter：一年多的发展', '/posts/MakeGKDInspectBetter：一年多的发展', Record<never, never>, Record<never, never>>,
     '/posts/P2669金币-题解': RouteRecordInfo<'/posts/P2669金币-题解', '/posts/P2669金币-题解', Record<never, never>, Record<never, never>>,
+    '/posts/关于 Milthm 由单曲 Reality 计算单曲分数的函数': RouteRecordInfo<'/posts/关于 Milthm 由单曲 Reality 计算单曲分数的函数', '/posts/关于 Milthm 由单曲 Reality 计算单曲分数的函数', Record<never, never>, Record<never, never>>,
+    '/posts/关于本人GKD订阅终止维护的通知': RouteRecordInfo<'/posts/关于本人GKD订阅终止维护的通知', '/posts/关于本人GKD订阅终止维护的通知', Record<never, never>, Record<never, never>>,
+    '/posts/哲学的基本问题和两大派别': RouteRecordInfo<'/posts/哲学的基本问题和两大派别', '/posts/哲学的基本问题和两大派别', Record<never, never>, Record<never, never>>,
+    '/posts/寂しい夏のせいにして 歌词+罗马音': RouteRecordInfo<'/posts/寂しい夏のせいにして 歌词+罗马音', '/posts/寂しい夏のせいにして 歌词+罗马音', Record<never, never>, Record<never, never>>,
+    '/posts/随笔': RouteRecordInfo<'/posts/随笔', '/posts/随笔', Record<never, never>, Record<never, never>>,
+    '/sponsor/': RouteRecordInfo<'/sponsor/', '/sponsor', Record<never, never>, Record<never, never>>,
     '/tags/': RouteRecordInfo<'/tags/', '/tags', Record<never, never>, Record<never, never>>,
   }
+
+  /**
+   * Route file to route info map by unplugin-vue-router.
+   * Used by the volar plugin to automatically type useRoute()
+   *
+   * Each key is a file path relative to the project root with 2 properties:
+   * - routes: union of route names of the possible routes when in this page (passed to useRoute<...>())
+   * - views: names of nested views (can be passed to <RouterView name="...">)
+   *
+   * @internal
+   */
+  export interface _RouteFileInfoMap {
+    'node_modules/.pnpm/valaxy-theme-yun@0.26.6_vue@3.5.22_typescript@5.9.3_/node_modules/valaxy-theme-yun/pages/index.vue': {
+      routes: '/'
+      views: never
+    }
+    'node_modules/.pnpm/valaxy@0.26.6_@babel+parser_65784959bab394266b7c20c090e3fbd0/node_modules/valaxy/client/pages/[...path].vue': {
+      routes: '/[...path]'
+      views: never
+    }
+    'pages/404.md': {
+      routes: '/404'
+      views: never
+    }
+    'pages/about/index.md': {
+      routes: '/about/'
+      views: never
+    }
+    'pages/about/site.md': {
+      routes: '/about/site'
+      views: never
+    }
+    'pages/archives/index.md': {
+      routes: '/archives/'
+      views: never
+    }
+    'pages/categories/index.md': {
+      routes: '/categories/'
+      views: never
+    }
+    'pages/links/index.md': {
+      routes: '/links/'
+      views: never
+    }
+    'node_modules/.pnpm/valaxy-theme-yun@0.26.6_vue@3.5.22_typescript@5.9.3_/node_modules/valaxy-theme-yun/pages/page/[page].vue': {
+      routes: '/page/[page]'
+      views: never
+    }
+    'node_modules/.pnpm/valaxy-theme-yun@0.26.6_vue@3.5.22_typescript@5.9.3_/node_modules/valaxy-theme-yun/pages/posts/index.vue': {
+      routes: '/posts/'
+      views: never
+    }
+    'pages/posts/GKD本地订阅收录申请.md': {
+      routes: '/posts/GKD本地订阅收录申请'
+      views: never
+    }
+    'pages/posts/GKD规则编写之属性-1.md': {
+      routes: '/posts/GKD规则编写之属性-1'
+      views: never
+    }
+    'pages/posts/GKD规则编写之属性-2.md': {
+      routes: '/posts/GKD规则编写之属性-2'
+      views: never
+    }
+    'pages/posts/GKD规则编写之选择器-1.md': {
+      routes: '/posts/GKD规则编写之选择器-1'
+      views: never
+    }
+    'pages/posts/GKD规则编写之选择器-2.md': {
+      routes: '/posts/GKD规则编写之选择器-2'
+      views: never
+    }
+    'pages/posts/MakeGKDInspectBetter：一年多的发展.md': {
+      routes: '/posts/MakeGKDInspectBetter：一年多的发展'
+      views: never
+    }
+    'pages/posts/P2669金币-题解.md': {
+      routes: '/posts/P2669金币-题解'
+      views: never
+    }
+    'pages/posts/关于 Milthm 由单曲 Reality 计算单曲分数的函数.md': {
+      routes: '/posts/关于 Milthm 由单曲 Reality 计算单曲分数的函数'
+      views: never
+    }
+    'pages/posts/关于本人GKD订阅终止维护的通知.md': {
+      routes: '/posts/关于本人GKD订阅终止维护的通知'
+      views: never
+    }
+    'pages/posts/哲学的基本问题和两大派别.md': {
+      routes: '/posts/哲学的基本问题和两大派别'
+      views: never
+    }
+    'pages/posts/寂しい夏のせいにして 歌词+罗马音.md': {
+      routes: '/posts/寂しい夏のせいにして 歌词+罗马音'
+      views: never
+    }
+    'pages/posts/随笔.md': {
+      routes: '/posts/随笔'
+      views: never
+    }
+    'pages/sponsor/index.md': {
+      routes: '/sponsor/'
+      views: never
+    }
+    'pages/tags/index.md': {
+      routes: '/tags/'
+      views: never
+    }
+  }
+
+  /**
+   * Get a union of possible route names in a certain route component file.
+   * Used by the volar plugin to automatically type useRoute()
+   *
+   * @internal
+   */
+  export type _RouteNamesForFilePath<FilePath extends string> =
+    _RouteFileInfoMap extends Record<FilePath, infer Info>
+      ? Info['routes']
+      : keyof RouteNamedMap
 }

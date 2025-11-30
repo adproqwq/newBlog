@@ -5,12 +5,12 @@ export default defineSiteConfig({
   url: 'https://blog.adproqwq.top/',
   lang: 'zh-CN',
   mode: 'light',
-  title: 'AdproのBlog',
+  title: 'AoneのBlog',
   subtitle: '喵~',
-  favicon: 'https://blog.adproqwq.top/avatar.jpg',
+  favicon: 'https://blog.adproqwq.top/avatar.png',
   author: {
-    name: 'Adpro',
-    avatar: 'https://blog.adproqwq.top/avatar.jpg',
+    name: 'Aone',
+    avatar: 'https://blog.adproqwq.top/avatar.png',
     email: 'adpro_qwq@qq.com',
     link: 'https://github.com/adproqwq',
     intro: '一个业余开发者，喜欢自己乱写东西。打音游，不过菜菜，街机主中二节奏。',
@@ -19,7 +19,7 @@ export default defineSiteConfig({
       message: 'World.execute(me);',
     },
   },
-  description: 'Adpro的Blog，可能有有用的东西？',
+  description: 'Aone的Blog，可能有有用的东西？',
   social: [
     {
       name: 'RSS',

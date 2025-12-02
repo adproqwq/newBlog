@@ -28,9 +28,9 @@
   },
   {
     "url": "https://keqing.moe/",
-    "avatar": "https://keqing.moe/res/avatar.png",
-    "name": "刻晴",
-    "blog": "KeqingMoe's Site",
+    "avatar": "https://keqing.moe/favicon.svg",
+    "name": "時雨てる",
+    "blog": "時雨繋ぎ、時暮灯し",
     "desc": "心有所向，日复一日，必有精进",
     "email": "me@keqing.moe",
     "color": "#8E78C6"
@@ -53,7 +53,7 @@
   },
   {
     "url": "https://karlbaey.top/",
-    "avatar": "https://karlbaey.top/images/Fundamental/avatar.png",
+    "avatar": "https://avatars.githubusercontent.com/u/191684279",
     "name": "Karlbaey101",
     "blog": "老卡尔的旧纸箱",
     "desc": "这里存着卡尔白的过去、现在和未来",
@@ -76,15 +76,6 @@
     "desc": "一个游戏传播兼技术交流博客，会更新但平常想不到写啥(・ε・)，欢迎来玩呢喵♡",
     "email": "serikawa@977958.xyz",
     "color": "#DCDCDC"
-  },
-  {
-    "url": "http://main.minqwq.moe/",
-    "avatar": "http://main.minqwq.moe/favicon.ico",
-    "name": "minqwq",
-    "blog": "minqwq 个人网站",
-    "desc": "minqwq 个人网站 孩子没事写着玩的( 主打一个上世纪风格",
-    "email": "minqwq723897@outlook.com",
-    "color": "#EE3E3E"
   },
   {
     "url": "https://www.moely.link/",

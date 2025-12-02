@@ -10,7 +10,7 @@ random: true
 
 ```text
   链接：https://blog.adproqwq.top/
-  图标链接：https://blog.adproqwq.top/avatar.jpg
+  图标链接：https://blog.adproqwq.top/avatar.png
   网站名称：AdproのBlog
   描述：Adpro的Blog，可能有有用的东西？
   主题色：#39C5BB

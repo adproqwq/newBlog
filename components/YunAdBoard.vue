@@ -1,9 +1,9 @@
 <template>
   <YunCard>
     一个有意思的项目：
-    <a href="https://www.inversecity.com/">
-      镜面之地
+    <a href="https://ogame-vue-ts.wenzi.games/">
+      OGame-Vue-Ts
     </a>
-    可以多多支持一下！
+    我已经玩上瘾了！
   </YunCard>
 </template>

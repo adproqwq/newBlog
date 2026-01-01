@@ -1,7 +1,7 @@
 ---
 title: 我的小伙伴们
 keywords: 链接
-description: Adproの小伙伴们
+description: Aoneの小伙伴们
 links: /links.json
 random: true
 ---
@@ -11,8 +11,8 @@ random: true
 ```text
   链接：https://blog.adproqwq.top/
   图标链接：https://blog.adproqwq.top/avatar.png
-  网站名称：AdproのBlog
-  描述：Adpro的Blog，可能有有用的东西？
+  网站名称：AoneのBlog
+  描述：Aone的Blog，可能有有用的东西？
   主题色：#39C5BB
 ```
 

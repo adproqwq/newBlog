@@ -69,11 +69,11 @@
     "color": "#3F1313"
   },
   {
-    "url": "https://977958.xyz/",
+    "url": "https://blog.serikawa.top/",
     "avatar": "https://cdn.jsdelivr.net/gh/serikawa0625/serika-img/uploads/%E8%8A%B9%E9%A6%99%E5%A4%A7%E5%A4%B4.jpg",
     "name": "芹香serika♡",
     "blog": "芹香のblog",
-    "desc": "一个游戏传播兼技术交流博客，会更新但平常想不到写啥(・ε・)，欢迎来玩呢喵♡",
+    "desc": "芹香のblog，一个游戏站点兼信息技术交流小站，欢迎来玩喵♡",
     "email": "serikawa@977958.xyz",
     "color": "#DCDCDC"
   },
@@ -167,5 +167,19 @@
     "desc": "写文档使我快乐🍺",
     "email": "dkk@dominickk.top",
     "color": "#C78FFF"
+  },
+  {
+    "url": "https://blog.ssyc.me/",
+    "avatar": "https://blog.ssyc.me/favicon.ico",
+    "name": "虫不知喔",
+    "blog": "世上云川",
+    "desc": "若有韶月熹微，愿作流萤徂岁。"
+  },
+  {
+    "url": "http://www.996icu.eu.org/",
+    "avatar": "https://img.scdn.io/i/692d847f79589_1764590719.webp",
+    "name": "Nebula",
+    "blog": "Nebula Blog",
+    "desc": "Nebula.SYS"
   }
 ]

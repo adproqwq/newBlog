@@ -17,7 +17,7 @@ categories: [QwQNT]
 
 以往活动存档请[点击这里查看](https://qwqnt-community.github.io/docs/framework/event-archive)
 
-本次活动共计 16 题，不同题目之间存在防跳关机制~~（不过看起来有用，但不多）~~
+本次活动共计 16 题，不同题目之间存在防跳关机制 ~~（不过看起来有用，但不多）~~
 
 ## a. 开始页
 
@@ -137,7 +137,7 @@ https://3.qwqnt.ailoli.one/Ferris/   #注意，此处严格区分大小写！
 
 通过东方的相关梗知识，此处的 `baka` 指的是琪露诺，在`琪露诺的算数课堂`中可以得知，她数数是这样的：1，2，⑨。
 
-所以这里将其纠正答案即是 `3`。
+所以这里将其纠正，答案即是 `3`。
 
 ## j. 第 ⑨ 题
 
@@ -362,7 +362,7 @@ https://3.qwqnt.ailoli.one/zmluyww/
 
 但是请看源码：
 
-```javascript
+```typescript
 Object.defineProperty(window, 'nandaoshuo', {
   writable: true,
   value: {

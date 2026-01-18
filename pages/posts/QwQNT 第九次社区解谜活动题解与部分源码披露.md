@@ -9,7 +9,7 @@ categories: [QwQNT]
 
 本篇题解大部分来自[@Lheopd](https://t.me/Lheopd)。已获得授权。
 
-本篇题解涉及的原网站，因为有人扫站，为了保障其余网站的稳定，决定下线。
+原网站由于被扫站，已经下线。现在这里使用的是归档网站，原来所有的游玩记录都被清空了。
 
 # 2. 题解
 
@@ -21,25 +21,25 @@ categories: [QwQNT]
 
 ## a. 开始页
 
-[QwQNT 第二次统一高考](https://3.qwqnt.adproqwq.top/)
+[QwQNT 第二次统一高考](https://3.qwqnt.ailoli.one/)
 
 点击 `开始考试` 即可前往第 1 题
 
 ## b. 第 1 题
 
-[第 1 题](https://3.qwqnt.adproqwq.top/1/)
+[第 1 题](https://3.qwqnt.ailoli.one/1/)
 
 此处的 `经典返场` 指的是 QwQNT 第三次社区解谜活动的第1题，将网页上方地址栏中的 1 改为 2 即可前往第 2 题
 
 ```text
-https://3.qwqnt.adproqwq.top/1/
+https://3.qwqnt.ailoli.one/1/
 ↓
-https://3.qwqnt.adproqwq.top/2/
+https://3.qwqnt.ailoli.one/2/
 ```
 
 ## c. 第 2 题
 
-[第 2 题](https://3.qwqnt.adproqwq.top/2/)
+[第 2 题](https://3.qwqnt.ailoli.one/2/)
 
 `学会用审视的眼光看问题！` 指的是网页中常用的 F12 开发者工具
 
@@ -52,14 +52,14 @@ https://3.qwqnt.adproqwq.top/2/
 由此可以得知下一题的关键词
 
 ```text
-https://3.qwqnt.adproqwq.top/2/
+https://3.qwqnt.ailoli.one/2/
 ↓
-https://3.qwqnt.adproqwq.top/answer/
+https://3.qwqnt.ailoli.one/answer/
 ```
 
 ## d. 第 3 题
 
-[第 3 题](https://3.qwqnt.adproqwq.top/answer/)
+[第 3 题](https://3.qwqnt.ailoli.one/answer/)
 
 根据题目中 `宇宙的终极答案` 可知，此处 neta 了道格拉斯·亚当斯的《银河系漫游指南》
 
@@ -68,42 +68,42 @@ https://3.qwqnt.adproqwq.top/answer/
 由此可以得知下一题的关键词
 
 ```text
-https://3.qwqnt.adproqwq.top/answer/
+https://3.qwqnt.ailoli.one/answer/
 ↓
-https://3.qwqnt.adproqwq.top/42/
+https://3.qwqnt.ailoli.one/42/
 ```
 
 ## e. 第 4 题
 
-[第 4 题](https://3.qwqnt.adproqwq.top/42/)
+[第 4 题](https://3.qwqnt.ailoli.one/42/)
 
 根据题目中的提示，我们点击 F12 打开开发者工具，选择控制台选项卡即可看到输出的日志 `next`
 
 由此可以得知下一题的关键词
 
 ```text
-https://3.qwqnt.adproqwq.top/42/
+https://3.qwqnt.ailoli.one/42/
 ↓
-https://3.qwqnt.adproqwq.top/next/
+https://3.qwqnt.ailoli.one/next/
 ```
 
 ## f. 第 5 题
 
-[第 5 题](https://3.qwqnt.adproqwq.top/next/)
+[第 5 题](https://3.qwqnt.ailoli.one/next/)
 
 此处题目中提到 `吃铁锈的螃蟹` 或许部分人直接去搜索对应的生物词条了，但实际上这里指的是编程语言 `Rust` 的吉祥物 `Ferris`
 
 由此可以得知下一题的关键词
 
 ```text
-https://3.qwqnt.adproqwq.top/next/
+https://3.qwqnt.ailoli.one/next/
 ↓
-https://3.qwqnt.adproqwq.top/Ferris/   #注意，此处严格区分大小写！
+https://3.qwqnt.ailoli.one/Ferris/   #注意，此处严格区分大小写！
 ```
 
 ## g. 第 6 题
 
-[第 6 题](https://3.qwqnt.adproqwq.top/Ferris/)
+[第 6 题](https://3.qwqnt.ailoli.one/Ferris/)
 
 可以看见页面中的按钮为灰色，推测是被禁用了
 
@@ -113,7 +113,7 @@ https://3.qwqnt.adproqwq.top/Ferris/   #注意，此处严格区分大小写！
 
 ## h. 第 7 题
 
-[第 7 题](https://3.qwqnt.adproqwq.top/07)
+[第 7 题](https://3.qwqnt.ailoli.one/07)
 
 此处按钮为正常状态，点击后没有反应，结合题目中的文本推测，可能是按钮内部文本做了识别
 
@@ -141,7 +141,7 @@ https://3.qwqnt.adproqwq.top/Ferris/   #注意，此处严格区分大小写！
 
 ## j. 第 ⑨ 题
 
-[第 ⑨ 题](https://3.qwqnt.adproqwq.top/3/)
+[第 ⑨ 题](https://3.qwqnt.ailoli.one/3/)
 
 （原作者此处因为是从第 8 题页面进入的第 9 题，因此不会触发防跳关机制，如果直接跳过前面的进入第 9 题，则会触发防跳关回到开始页）
 
@@ -158,26 +158,26 @@ https://3.qwqnt.adproqwq.top/Ferris/   #注意，此处严格区分大小写！
 由此可以得知下一题的关键词
 
 ```text
-https://3.qwqnt.adproqwq.top/3/
+https://3.qwqnt.ailoli.one/3/
 ↓
-https://3.qwqnt.adproqwq.top/koishi/
+https://3.qwqnt.ailoli.one/koishi/
 ```
 
 ## k. 第 10 题
 
-[第 10 题](https://3.qwqnt.adproqwq.top/koishi/)
+[第 10 题](https://3.qwqnt.ailoli.one/koishi/)
 
 根据文本，点击文字后出现提示，根据提示查看控制台日志可以得到下一题关键词
 
 ```text
-https://3.qwqnt.adproqwq.top/koishi/
+https://3.qwqnt.ailoli.one/koishi/
 ↓
-https://3.qwqnt.adproqwq.top/hajimi/
+https://3.qwqnt.ailoli.one/hajimi/
 ```
 
 ## l. 第 11 题
 
-[第 11 题](https://3.qwqnt.adproqwq.top/hajimi/)
+[第 11 题](https://3.qwqnt.ailoli.one/hajimi/)
 
 这题直接扔去 ChatGPT 等 AI 工具，解出答案有两种，不同学校教的方程形式不一样，±12 都填进去试试
 
@@ -186,14 +186,14 @@ https://3.qwqnt.adproqwq.top/hajimi/
 根据提示查看日志得出下一题关键词
 
 ```text
-https://3.qwqnt.adproqwq.top/hajimi/
+https://3.qwqnt.ailoli.one/hajimi/
 ↓
-https://3.qwqnt.adproqwq.top/qwqnt/   #此处关键词应该挺容易猜出来的
+https://3.qwqnt.ailoli.one/qwqnt/   #此处关键词应该挺容易猜出来的
 ```
 
 ## m. 第 12 题
 
-[第 12 题](https://3.qwqnt.adproqwq.top/qwqnt/)
+[第 12 题](https://3.qwqnt.ailoli.one/qwqnt/)
 
 结合题目，查看 F12 开发者工具中的各个地方均无特殊标识，所以直接根据题目猜关键词
 
@@ -202,28 +202,28 @@ https://3.qwqnt.adproqwq.top/qwqnt/   #此处关键词应该挺容易猜出来�
 但其实你扣一下题目字眼，在控制台中访问 window.hongdouni 会返回 `false`
 
 ```text
-https://3.qwqnt.adproqwq.top/qwqnt/
+https://3.qwqnt.ailoli.one/qwqnt/
 ↓
-https://3.qwqnt.adproqwq.top/false/
+https://3.qwqnt.ailoli.one/false/
 ```
 
 ## n. 第 13 题
 
-[第 13 题](https://3.qwqnt.adproqwq.top/false/)
+[第 13 题](https://3.qwqnt.ailoli.one/false/)
 
 查看题目中内容发现为社会主义核心价值观，不同词语出现的次数和频率不一样
 
 推测为核心价值观编码方式，将其粘贴进对应网页工具可得提示： `下一关是：nanbeilvdou`
 
 ```text
-https://3.qwqnt.adproqwq.top/false/
+https://3.qwqnt.ailoli.one/false/
 ↓
-https://3.qwqnt.adproqwq.top/nanbeilvdou/
+https://3.qwqnt.ailoli.one/nanbeilvdou/
 ```
 
 ## o. 第 14 题
 
-[第 14 题](https://3.qwqnt.adproqwq.top/nanbeilvdou/)
+[第 14 题](https://3.qwqnt.ailoli.one/nanbeilvdou/)
 
 题目中的 `大张挞伐，一决雌雄` 为清廷在 1900 年（即光绪二十六年）庚子事变中发布的对外宣战诏书（宣战措辞）中的内容
 
@@ -234,32 +234,32 @@ https://3.qwqnt.adproqwq.top/nanbeilvdou/
 由此可以得出下一题的关键词
 
 ```text
-https://3.qwqnt.adproqwq.top/nanbeilvdou/
+https://3.qwqnt.ailoli.one/nanbeilvdou/
 ↓
-https://3.qwqnt.adproqwq.top/55/
+https://3.qwqnt.ailoli.one/55/
 ```
 
 ## p. 第 15 题
 
-[第 15 题](https://3.qwqnt.adproqwq.top/55/)
+[第 15 题](https://3.qwqnt.ailoli.one/55/)
 
 根据题目中提示，本题需要修改按钮颜色
 
 打开开发者工具，查看 `冰冰凉凉` 对应的颜色为 `#0ff` ，将按钮元素的颜色更改为 `#0ff` 后按钮提示发生改变，得到下一题的关键词
 
 ```text
-https://3.qwqnt.adproqwq.top/55/
+https://3.qwqnt.ailoli.one/55/
 ↓
-https://3.qwqnt.adproqwq.top/qqnt/   #此处关键词也挺容易猜出来的
+https://3.qwqnt.ailoli.one/qqnt/   #此处关键词也挺容易猜出来的
 ```
 
 ## q. 第 16 题
 
-[第16题](https://3.qwqnt.adproqwq.top/qqnt/)
+[第16题](https://3.qwqnt.ailoli.one/qqnt/)
 
 （相较于之前的题目，这题才是重量级）
 
-首先打开 F12 开发者工具，查看元素选项卡，发现隐藏地址 [api_doc](https://3.qwqnt.adproqwq.top/api_doc.txt)
+首先打开 F12 开发者工具，查看元素选项卡，发现隐藏地址 [api_doc](https://3.qwqnt.ailoli.one/api_doc.txt)
 
 接下来分析其中内容（此处可以借助 AI 工具帮助分析）
 
@@ -339,14 +339,14 @@ if (nandaoshuo.verify('list')) {
 仔细观察哈基米 v1 解密的网站，发现下面还有一个哈基米方言的输入框，于是我们将 `zhizaibide` 作为方言文本输入进去，得到最终关键词
 
 ```text
-https://3.qwqnt.adproqwq.top/qqnt/
+https://3.qwqnt.ailoli.one/qqnt/
 ↓
-https://3.qwqnt.adproqwq.top/zmluyww/
+https://3.qwqnt.ailoli.one/zmluyww/
 ```
 
 ## r. 结尾
 
-[恭喜！](https://3.qwqnt.adproqwq.top/zmluyww/)
+[恭喜！](https://3.qwqnt.ailoli.one/zmluyww/)
 
 这次活动相较于前 8 期活动给我的感觉是变简单了，也有可能是刚好用到的知识我有了解过，不过总的来说还是挺有意思的。
 

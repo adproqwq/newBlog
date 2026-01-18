@@ -17,7 +17,7 @@ categories: [QwQNT]
 
 以往活动存档请[点击这里查看](https://qwqnt-community.github.io/docs/framework/event-archive)
 
-本次活动共计16题，不同题目之间存在防跳关机制~~（不过看起来有用，但不多）~~
+本次活动共计 16 题，不同题目之间存在防跳关机制~~（不过看起来有用，但不多）~~
 
 ## a. 开始页
 

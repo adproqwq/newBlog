@@ -1,0 +1,170 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "AoneのBlog",
+    "home_page_url": "https://blog.adproqwq.top/",
+    "feed_url": "https://blog.adproqwq.top/feed.json",
+    "description": "Aone的Blog，可能有有用的东西？",
+    "icon": "https://blog.adproqwq.top/avatar.png",
+    "author": {
+        "name": "Aone",
+        "url": "https://github.com/adproqwq"
+    },
+    "items": [
+        {
+            "id": "https://blog.adproqwq.top/posts/关于本人GKD订阅终止维护的通知",
+            "content_html": "<p>Adpro订阅在2024年5月13日，迎来了终点。</p>\n<hr>\n<p>Adpro订阅诞生于2024年1月28日。那时，GKD默认订阅宣布停止维护，我用了一个小时（可能更长，也可能更短），fork了仓库，修改</p>\n<br/><p>访问 <a href=\"https://blog.adproqwq.top/posts/关于本人GKD订阅终止维护的通知\" target=\"_blank\">https://blog.adproqwq.top/posts/关于本人GKD订阅终止维护的通知</a> 阅读全文。</p>",
+            "url": "https://blog.adproqwq.top/posts/关于本人GKD订阅终止维护的通知",
+            "title": "关于本人GKD订阅终止维护的通知",
+            "date_modified": "2024-05-14T07:34:17.000Z",
+            "date_published": "2026-01-18T06:09:59.560Z",
+            "author": {
+                "name": "Aone",
+                "url": "https://github.com/adproqwq"
+            }
+        },
+        {
+            "id": "https://blog.adproqwq.top/posts/哲学的基本问题和两大派别",
+            "content_html": "<h1>零、写在前面</h1>\n<p>这是随便写写的笔记，主要写我的理解，所以可能有不正确的内容，不建议作为个人自学的资料！</p>\n<h1>一、哲学的基本问题</h1>\n<p>哲学的基本问题是：思维和存在的<strong>关系</strong>问题（或可表述为：意</p>\n<br/><p>访问 <a href=\"https://blog.adproqwq.top/posts/哲学的基本问题和两大派别\" target=\"_blank\">https://blog.adproqwq.top/posts/哲学的基本问题和两大派别</a> 阅读全文。</p>",
+            "url": "https://blog.adproqwq.top/posts/哲学的基本问题和两大派别",
+            "title": "哲学的基本问题和两大派别",
+            "date_modified": "2025-05-17T09:06:57.000Z",
+            "date_published": "2026-01-18T06:09:59.560Z",
+            "author": {
+                "name": "Aone",
+                "url": "https://github.com/adproqwq"
+            }
+        },
+        {
+            "id": "https://blog.adproqwq.top/posts/寂しい夏のせいにして 歌词+罗马音",
+            "content_html": "<p>为避免版权风险，本贴仅含日语原文歌词及其罗马音，不包含任何翻译。</p>\n<p>非日语专业，如有错误欢迎指出！</p>\n<hr>\n<p>&lt;meting-js<br>\nid=&quot;1954947025&quot;<br>\nserver=&quot;neteas</p>\n<br/><p>访问 <a href=\"https://blog.adproqwq.top/posts/寂しい夏のせいにして 歌词+罗马音\" target=\"_blank\">https://blog.adproqwq.top/posts/寂しい夏のせいにして 歌词+罗马音</a> 阅读全文。</p>",
+            "url": "https://blog.adproqwq.top/posts/寂しい夏のせいにして 歌词+罗马音",
+            "title": "寂しい夏のせいにして　歌词+罗马音",
+            "date_modified": "2025-05-18T01:54:17.000Z",
+            "date_published": "2026-01-18T06:09:59.560Z",
+            "author": {
+                "name": "Aone",
+                "url": "https://github.com/adproqwq"
+            }
+        },
+        {
+            "id": "https://blog.adproqwq.top/posts/随笔",
+            "content_html": "<p>满月之夜，无人教堂之巅。黑猫静坐于此，眼神淡漠。尾尖略微摆动，月光之下的教堂飞出成群的乌鸦。嘘~仔细听，似乎有什么在呻吟呢~</p>\n<p>阳光正好，白猫躺在花海中小憩。微风拂过，她惫懒地撑起身子，静静地盯住一</p>\n<br/><p>访问 <a href=\"https://blog.adproqwq.top/posts/随笔\" target=\"_blank\">https://blog.adproqwq.top/posts/随笔</a> 阅读全文。</p>",
+            "url": "https://blog.adproqwq.top/posts/随笔",
+            "title": "随笔",
+            "date_modified": "2025-04-13T05:59:39.000Z",
+            "date_published": "2026-01-18T06:09:59.560Z",
+            "author": {
+                "name": "Aone",
+                "url": "https://github.com/adproqwq"
+            }
+        },
+        {
+            "id": "https://blog.adproqwq.top/posts/GKD本地订阅收录申请",
+            "content_html": "<p>请在下方评论区，按照<a href=\"https://github.com/Adpro-Team/GKD_THS_List/blob/dev/CONTRIBUTING.md\">贡献文档</a>的说明留言</p>\n<br/><p>访问 <a href=\"https://blog.adproqwq.top/posts/GKD本地订阅收录申请\" target=\"_blank\">https://blog.adproqwq.top/posts/GKD本地订阅收录申请</a> 阅读全文。</p>",
+            "url": "https://blog.adproqwq.top/posts/GKD本地订阅收录申请",
+            "title": "GKD本地订阅收录申请",
+            "date_modified": "2024-02-23T17:23:34.000Z",
+            "date_published": "2026-01-18T06:09:59.559Z",
+            "author": {
+                "name": "Aone",
+                "url": "https://github.com/adproqwq"
+            }
+        },
+        {
+            "id": "https://blog.adproqwq.top/posts/GKD规则编写之属性-1",
+            "content_html": "<h1>0. 前言</h1>\n<p>本教程不会有太多的图，大多数是理论讲解。</p>\n<p>那么，现在先来解释下什么叫<code>属性</code>：</p>\n<p><code>属性</code>，是GKD的专有名词。由于GKD的规则采用<code>JSON</code>（为方便表述，下文的<code>JSON</code>包</p>\n<br/><p>访问 <a href=\"https://blog.adproqwq.top/posts/GKD规则编写之属性-1\" target=\"_blank\">https://blog.adproqwq.top/posts/GKD规则编写之属性-1</a> 阅读全文。</p>",
+            "url": "https://blog.adproqwq.top/posts/GKD规则编写之属性-1",
+            "title": "GKD规则编写之属性-1",
+            "date_modified": "2023-12-24T09:06:06.000Z",
+            "date_published": "2026-01-18T06:09:59.559Z",
+            "author": {
+                "name": "Aone",
+                "url": "https://github.com/adproqwq"
+            }
+        },
+        {
+            "id": "https://blog.adproqwq.top/posts/GKD规则编写之属性-2",
+            "content_html": "<h1>0. 前言</h1>\n<p>本篇主要讲述在GKD规则编写中不必需，但常用的<code>属性</code>。</p>\n<p>如果没有看过上一篇的同学，请看完上一篇哦！</p>\n<h1>1. 正文</h1>\n<h2>1.1 snapshotUrls</h2>\n<p>`snapsh</p>\n<br/><p>访问 <a href=\"https://blog.adproqwq.top/posts/GKD规则编写之属性-2\" target=\"_blank\">https://blog.adproqwq.top/posts/GKD规则编写之属性-2</a> 阅读全文。</p>",
+            "url": "https://blog.adproqwq.top/posts/GKD规则编写之属性-2",
+            "title": "GKD规则编写之属性-2",
+            "date_modified": "2024-01-06T05:00:23.000Z",
+            "date_published": "2026-01-18T06:09:59.559Z",
+            "author": {
+                "name": "Aone",
+                "url": "https://github.com/adproqwq"
+            }
+        },
+        {
+            "id": "https://blog.adproqwq.top/posts/GKD规则编写之选择器-1",
+            "content_html": "<h1>前言</h1>\n<p>本教程仅为个人理解，可能不严谨，请见谅。</p>\n<p>本教程不会有太多的图~~，别问，问就是懒得截~~</p>\n<p>GKD的规则编写靠的就是选择器，选择器的作用就是根据信息去定位节点。</p>\n<p>GKD所使用的选择</p>\n<br/><p>访问 <a href=\"https://blog.adproqwq.top/posts/GKD规则编写之选择器-1\" target=\"_blank\">https://blog.adproqwq.top/posts/GKD规则编写之选择器-1</a> 阅读全文。</p>",
+            "url": "https://blog.adproqwq.top/posts/GKD规则编写之选择器-1",
+            "title": "GKD规则编写之选择器-1",
+            "date_modified": "2023-12-23T12:43:17.000Z",
+            "date_published": "2026-01-18T06:09:59.559Z",
+            "author": {
+                "name": "Aone",
+                "url": "https://github.com/adproqwq"
+            }
+        },
+        {
+            "id": "https://blog.adproqwq.top/posts/GKD规则编写之选择器-2",
+            "content_html": "<h1>关系选择器</h1>\n<p>上一篇讲完了<code>属性选择器</code>，现在来讲<code>关系选择器</code></p>\n<p><code>关系选择器</code>用于连接两个<code>属性选择器</code>，可以回忆一下1+2的例子，+号就是所谓<code>关系选择器</code>。</p>\n<p><code>关系选择器</code>由两部分构成</p>\n<br/><p>访问 <a href=\"https://blog.adproqwq.top/posts/GKD规则编写之选择器-2\" target=\"_blank\">https://blog.adproqwq.top/posts/GKD规则编写之选择器-2</a> 阅读全文。</p>",
+            "url": "https://blog.adproqwq.top/posts/GKD规则编写之选择器-2",
+            "title": "GKD规则编写之选择器-2",
+            "date_modified": "2023-12-23T14:29:42.000Z",
+            "date_published": "2026-01-18T06:09:59.559Z",
+            "author": {
+                "name": "Aone",
+                "url": "https://github.com/adproqwq"
+            }
+        },
+        {
+            "id": "https://blog.adproqwq.top/posts/MakeGKDInspectBetter：一年多的发展",
+            "content_html": "<h1>0. 写在前面</h1>\n<p>MakeGKDInspectBetter，或者说更熟悉的：GKD网页审查工具增强脚本，</p>\n<p>是一个提高GKD网页审查工具使用体验的用户脚本。</p>\n<p>它可以被绝大多数的用户脚本加载器加</p>\n<br/><p>访问 <a href=\"https://blog.adproqwq.top/posts/MakeGKDInspectBetter：一年多的发展\" target=\"_blank\">https://blog.adproqwq.top/posts/MakeGKDInspectBetter：一年多的发展</a> 阅读全文。</p>",
+            "url": "https://blog.adproqwq.top/posts/MakeGKDInspectBetter：一年多的发展",
+            "title": "MakeGKDInspectBetter：一年多的发展",
+            "date_modified": "2024-10-18T13:44:12.000Z",
+            "date_published": "2026-01-18T06:09:59.559Z",
+            "author": {
+                "name": "Aone",
+                "url": "https://github.com/adproqwq"
+            }
+        },
+        {
+            "id": "https://blog.adproqwq.top/posts/P2669金币-题解",
+            "content_html": "<h1>题目</h1>\n<h2>P2669 [NOIP2015 普及组] 金币</h2>\n<h3>题目背景</h3>\n<p>NOIP2015 普及组 T1</p>\n<h3>题目描述</h3>\n<p>国王将金币作为工资，发放给忠诚的骑士。第一天，骑士收到一</p>\n<br/><p>访问 <a href=\"https://blog.adproqwq.top/posts/P2669金币-题解\" target=\"_blank\">https://blog.adproqwq.top/posts/P2669金币-题解</a> 阅读全文。</p>",
+            "url": "https://blog.adproqwq.top/posts/P2669金币-题解",
+            "title": "P2669金币-题解",
+            "date_modified": "2023-10-27T15:37:55.000Z",
+            "date_published": "2026-01-18T06:09:59.559Z",
+            "author": {
+                "name": "Aone",
+                "url": "https://github.com/adproqwq"
+            }
+        },
+        {
+            "id": "https://blog.adproqwq.top/posts/QwQNT 第九次社区解谜活动题解与部分源码披露",
+            "content_html": "<h1>1. 前言</h1>\n<p>本篇题解大部分来自<a href=\"https://t.me/Lheopd\">@Lheopd</a>。已获得授权。</p>\n<p>原网站由于被扫站，已经下线。现在这里使用的是归档网站，原来所有的游玩记录都被清空了。</p>\n<br/><p>访问 <a href=\"https://blog.adproqwq.top/posts/QwQNT 第九次社区解谜活动题解与部分源码披露\" target=\"_blank\">https://blog.adproqwq.top/posts/QwQNT 第九次社区解谜活动题解与部分源码披露</a> 阅读全文。</p>",
+            "url": "https://blog.adproqwq.top/posts/QwQNT 第九次社区解谜活动题解与部分源码披露",
+            "title": "QwQNT 第九次社区解谜活动题解与部分源码披露",
+            "date_modified": "2026-01-17T16:26:36.000Z",
+            "date_published": "2026-01-18T06:09:59.559Z",
+            "author": {
+                "name": "Aone",
+                "url": "https://github.com/adproqwq"
+            }
+        },
+        {
+            "id": "https://blog.adproqwq.top/posts/关于 Milthm 由单曲 Reality 计算单曲分数的函数",
+            "content_html": "<p>在一切开始之前，我们需要援引一下<a href=\"https://github.com/mkzi-nya/\">@mkzi-nya</a>，也就是归梦在之前发布的研究成果。</p>\n<p>给定分数 $s$ 和定数 $c$，则有关于 $</p>\n<br/><p>访问 <a href=\"https://blog.adproqwq.top/posts/关于 Milthm 由单曲 Reality 计算单曲分数的函数\" target=\"_blank\">https://blog.adproqwq.top/posts/关于 Milthm 由单曲 Reality 计算单曲分数的函数</a> 阅读全文。</p>",
+            "url": "https://blog.adproqwq.top/posts/关于 Milthm 由单曲 Reality 计算单曲分数的函数",
+            "title": "关于 Milthm 由单曲 Reality 计算单曲分数的函数",
+            "date_modified": "2025-07-14T11:18:08.000Z",
+            "date_published": "2026-01-18T06:09:59.559Z",
+            "author": {
+                "name": "Aone",
+                "url": "https://github.com/adproqwq"
+            }
+        }
+    ]
+}

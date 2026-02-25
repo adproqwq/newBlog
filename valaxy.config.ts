@@ -4,6 +4,7 @@ import { addonTwikoo } from 'valaxy-addon-twikoo';
 import { addonFace } from 'valaxy-addon-face';
 import { addonMeting } from 'valaxy-addon-meting';
 import { addonVercount } from 'valaxy-addon-vercount';
+import { addonAbbrlink } from 'valaxy-addon-abbrlink';
 
 // add icons what you will need
 const safelist = [
@@ -76,11 +77,13 @@ export default defineValaxyConfig<UserThemeConfig>({
       beian: {
         enable: false,
         icp: '粤ICP备不知道多少号',
+        police: '粤公网安备不知道多少号'
       },
     },
   },
 
   addons: [
+    addonAbbrlink(),
     addonTwikoo({
       envId: 'https://twikoo.adproqwq.top',
     }),

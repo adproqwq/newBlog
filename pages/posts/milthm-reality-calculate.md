@@ -3,6 +3,7 @@ title: 关于 Milthm 由单曲 Reality 计算单曲分数的函数
 tags: [Milthm,查分,音游]
 date: 2025-07-14 19:18:08
 categories: [音游,Milthm]
+abbrlink: b7e1aaa9
 ---
 
 在一切开始之前，我们需要援引一下[@mkzi-nya](https://github.com/mkzi-nya/)，也就是归梦在之前发布的研究成果。

@@ -3,6 +3,7 @@ title: P2669金币-题解
 date: 2023-10-27 23:37:55
 tags: [洛谷,题解,Python]
 math: true
+abbrlink: ff845320
 ---
 
 # 题目

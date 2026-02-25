@@ -3,6 +3,7 @@ title: GKD规则编写之属性-1
 tags: [GKD, 教程]
 date: 2023-12-24 17:06:06
 categories: [教程,GKD]
+abbrlink: fc378954
 ---
 
 # 0. 前言

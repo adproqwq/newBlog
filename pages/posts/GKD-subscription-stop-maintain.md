@@ -2,6 +2,7 @@
 title: 关于本人GKD订阅终止维护的通知
 tags: [GKD]
 date: 2024-05-14 15:34:17
+abbrlink: 78caebf3
 ---
 Adpro订阅在2024年5月13日，迎来了终点。
 

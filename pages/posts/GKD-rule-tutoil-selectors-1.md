@@ -3,6 +3,7 @@ title: GKD规则编写之选择器-1
 tags: [GKD, 教程]
 date: 2023-12-23 20:43:17
 categories: [教程,GKD]
+abbrlink: 19da83e3
 ---
 
 # 前言

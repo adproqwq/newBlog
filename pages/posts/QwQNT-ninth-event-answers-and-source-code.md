@@ -3,6 +3,7 @@ title: QwQNT 第九次社区解谜活动题解与部分源码披露
 tags: [QwQNT,解谜,题解]
 date: 2026-01-18 00:26:36
 categories: [QwQNT]
+abbrlink: db708427
 ---
 
 # 1. 前言

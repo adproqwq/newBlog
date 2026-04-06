@@ -83,7 +83,9 @@ export default defineValaxyConfig<UserThemeConfig>({
   },
 
   addons: [
-    addonAbbrlink(),
+    addonAbbrlink({
+      override: true,
+    }),
     addonTwikoo({
       envId: 'https://twikoo.adproqwq.top',
     }),

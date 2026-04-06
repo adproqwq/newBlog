@@ -13,16 +13,16 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "valaxy": "0.27.0",
+    "valaxy": "0.28.4",
     "valaxy-addon-abbrlink": "^0.0.1",
     "valaxy-addon-face": "^0.2.0",
     "valaxy-addon-meting": "^0.1.4",
-    "valaxy-addon-twikoo": "^0.0.3",
+    "valaxy-addon-twikoo": "^0.0.4",
     "valaxy-addon-vercount": "^0.0.7",
-    "valaxy-theme-yun": "0.27.0"
+    "valaxy-theme-yun": "0.28.4"
   },
   "devDependencies": {
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.2"
   },
-  "packageManager": "pnpm@10.30.2"
+  "packageManager": "pnpm@10.33.0"
 }

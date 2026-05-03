@@ -97,7 +97,8 @@ export default defineValaxyConfig<UserThemeConfig>({
         type: 'playlist',
         auto: 'netease',
         theme: '#39C5BB',
-        api: 'https://api.injahow.cn/meting/?server=:server&type=:type&id=:id',
+        fixed: true,
+        api: 'https://api.injahow.cn/meting/?server=:server&type=:type&id=:id&r=:r',
       },
     }),
     addonVercount({

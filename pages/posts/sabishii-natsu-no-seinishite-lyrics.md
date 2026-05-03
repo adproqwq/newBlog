@@ -13,12 +13,13 @@ abbrlink: 9bc3ed02
 
 ---
 
-<meting-js
+<MetingJs
  id="1954947025"
  server="netease"
  type="song"
- theme="#39C5BB">
-</meting-js>
+ theme="#39C5BB"
+ api="https://api.injahow.cn/meting/?server=:server&type=:type&id=:id&r=:r">
+</MetingJs>
 
 ありふれた<ruby>話<rt>はなし</rt></ruby>の<ruby>続<rt>つづ</rt></ruby>きをしてよう
 

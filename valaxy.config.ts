@@ -36,7 +36,7 @@ export default defineValaxyConfig<UserThemeConfig>({
     notice: {
       enable: true,
       hideInPages: true,
-      content: '世界平和なんて噓だ 皆一人ぼっちだ',
+      content: '咲かせよ花 綺麗だ君はさ',
     },
 
     fireworks: {

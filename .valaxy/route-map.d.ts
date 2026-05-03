@@ -14,6 +14,9 @@ import type {
   ParamValueZeroOrMore,
   ParamValueZeroOrOne,
 } from 'vue-router'
+import type {
+  _ExtractParamParserType,
+} from 'vue-router/experimental'
 
 declare module 'vue-router' {
   interface TypesConfig {
@@ -93,6 +96,13 @@ declare module 'vue-router/auto-routes' {
     '/posts/': RouteRecordInfo<
       '/posts/',
       '/posts',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
+    '/posts/bubble-sort-problem-proof': RouteRecordInfo<
+      '/posts/bubble-sort-problem-proof',
+      '/posts/bubble-sort-problem-proof',
       Record<never, never>,
       Record<never, never>,
       | never
@@ -208,13 +218,13 @@ declare module 'vue-router/auto-routes' {
    * @internal
    */
   export interface _RouteFileInfoMap {
-    'node_modules/.pnpm/valaxy-theme-yun@0.28.4_mag_b8aac48cfe0a00ef180c350c958dd5a3/node_modules/valaxy-theme-yun/pages/index.vue': {
+    'node_modules/.pnpm/valaxy-theme-yun@0.28.6_mag_1ac8c0f993f802f11350cbebc1e134c4/node_modules/valaxy-theme-yun/pages/index.vue': {
       routes:
         | '/'
       views:
         | never
     }
-    'node_modules/.pnpm/valaxy@0.28.4_@babel+parser_ad2d6e71f47a79276d44f792b4de5e7e/node_modules/valaxy/client/pages/[...path].vue': {
+    'node_modules/.pnpm/valaxy@0.28.6_@babel+parser_3a4167f3466b42366765886e60d4954e/node_modules/valaxy/client/pages/[...path].vue': {
       routes:
         | '/[...path]'
       views:
@@ -256,15 +266,21 @@ declare module 'vue-router/auto-routes' {
       views:
         | never
     }
-    'node_modules/.pnpm/valaxy-theme-yun@0.28.4_mag_b8aac48cfe0a00ef180c350c958dd5a3/node_modules/valaxy-theme-yun/pages/page/[page].vue': {
+    'node_modules/.pnpm/valaxy-theme-yun@0.28.6_mag_1ac8c0f993f802f11350cbebc1e134c4/node_modules/valaxy-theme-yun/pages/page/[page].vue': {
       routes:
         | '/page/[page]'
       views:
         | never
     }
-    'node_modules/.pnpm/valaxy-theme-yun@0.28.4_mag_b8aac48cfe0a00ef180c350c958dd5a3/node_modules/valaxy-theme-yun/pages/posts/index.vue': {
+    'node_modules/.pnpm/valaxy-theme-yun@0.28.6_mag_1ac8c0f993f802f11350cbebc1e134c4/node_modules/valaxy-theme-yun/pages/posts/index.vue': {
       routes:
         | '/posts/'
+      views:
+        | never
+    }
+    'pages/posts/bubble-sort-problem-proof.md': {
+      routes:
+        | '/posts/bubble-sort-problem-proof'
       views:
         | never
     }

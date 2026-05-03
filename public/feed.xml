@@ -4,7 +4,7 @@
         <title>AoneのBlog</title>
         <link>https://blog.adproqwq.top/</link>
         <description>Aone的Blog，可能有有用的东西？</description>
-        <lastBuildDate>Sun, 03 May 2026 17:22:45 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 03 May 2026 17:36:59 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -19,11 +19,11 @@
             <link>https://blog.adproqwq.top/posts/bubble-sort-problem-proof</link>
             <guid isPermaLink="false">https://blog.adproqwq.top/posts/bubble-sort-problem-proof</guid>
             <pubDate>Sun, 03 May 2026 14:13:54 GMT</pubDate>
-            <content:encoded><![CDATA[<h1>一、概念解释</h1>
+            <content:encoded><![CDATA[<h1>1. 概念解释</h1>
 <h2>冒泡排序</h2>
 <p>在任意有限实数列 $(a_n)$ 中，对 $a_i$，$i \in \N$ 执行以下操作：</p>
 <ol>
-<li>若 $a_i &gt; a_{i+1}$，$i \in \N$，则</li>
+<li>若 $a_i &gt; a_{i+1}$，$i \in \N$，</li>
 </ol>
 <br/><p>访问 <a href="https://blog.adproqwq.top/posts/bubble-sort-problem-proof" target="_blank">https://blog.adproqwq.top/posts/bubble-sort-problem-proof</a> 阅读全文。</p>]]></content:encoded>
             <author>adpro_qwq@qq.com (Aone)</author>

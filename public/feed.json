@@ -12,7 +12,7 @@
     "items": [
         {
             "id": "https://blog.adproqwq.top/posts/bubble-sort-problem-proof",
-            "content_html": "<h1>一、概念解释</h1>\n<h2>冒泡排序</h2>\n<p>在任意有限实数列 $(a_n)$ 中，对 $a_i$，$i \\in \\N$ 执行以下操作：</p>\n<ol>\n<li>若 $a_i &gt; a_{i+1}$，$i \\in \\N$，则</li>\n</ol>\n<br/><p>访问 <a href=\"https://blog.adproqwq.top/posts/bubble-sort-problem-proof\" target=\"_blank\">https://blog.adproqwq.top/posts/bubble-sort-problem-proof</a> 阅读全文。</p>",
+            "content_html": "<h1>1. 概念解释</h1>\n<h2>冒泡排序</h2>\n<p>在任意有限实数列 $(a_n)$ 中，对 $a_i$，$i \\in \\N$ 执行以下操作：</p>\n<ol>\n<li>若 $a_i &gt; a_{i+1}$，$i \\in \\N$，</li>\n</ol>\n<br/><p>访问 <a href=\"https://blog.adproqwq.top/posts/bubble-sort-problem-proof\" target=\"_blank\">https://blog.adproqwq.top/posts/bubble-sort-problem-proof</a> 阅读全文。</p>",
             "url": "https://blog.adproqwq.top/posts/bubble-sort-problem-proof",
             "title": "对任意有限实数列进行有限次冒泡排序的结果必为非递减数列的证明",
             "date_modified": "2026-05-03T14:13:54.000Z",

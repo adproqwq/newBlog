@@ -2,3 +2,6 @@ allowBuilds:
   '@parcel/watcher': false
   esbuild: false
   vue-demi: false
+
+shamefullyHoist: true
+strictPeerDependencies: false

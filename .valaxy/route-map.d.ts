@@ -20,8 +20,9 @@ import type {
 
 declare module 'vue-router' {
   interface TypesConfig {
-    ParamParsers:
-      | never
+    _ParamParsers: {}
+    RouteNamedMap: import('vue-router/auto-routes').RouteNamedMap
+    _RouteFileInfoMap: import('vue-router/auto-routes')._RouteFileInfoMap
   }
 }
 
@@ -218,22 +219,28 @@ declare module 'vue-router/auto-routes' {
    * @internal
    */
   export interface _RouteFileInfoMap {
-    'node_modules/.pnpm/valaxy-theme-yun@0.28.10_ma_e20074ac9672efa227365498cb8a4336/node_modules/valaxy-theme-yun/pages/index.vue': {
+    'node_modules/.pnpm/valaxy-theme-yun@0.28.10_ma_608aa334118f0938b835774fa9390094/node_modules/valaxy-theme-yun/pages/index.vue': {
       routes:
         | '/'
       views:
         | never
+      pathParamNames:
+        | never
     }
-    'node_modules/.pnpm/valaxy@0.28.10_@babel+parse_3e111c689bd0a8d698cae81f69710d80/node_modules/valaxy/client/pages/[...path].vue': {
+    'node_modules/.pnpm/valaxy@0.28.10_@babel+parse_2e8428d9acfe3ca4327f9867997f9743/node_modules/valaxy/client/pages/[...path].vue': {
       routes:
         | '/[...path]'
       views:
         | never
+      pathParamNames:
+        | 'path'
     }
     'pages/404.md': {
       routes:
         | '/404'
       views:
+        | never
+      pathParamNames:
         | never
     }
     'pages/about/index.md': {
@@ -241,11 +248,15 @@ declare module 'vue-router/auto-routes' {
         | '/about/'
       views:
         | never
+      pathParamNames:
+        | never
     }
     'pages/about/site.md': {
       routes:
         | '/about/site'
       views:
+        | never
+      pathParamNames:
         | never
     }
     'pages/archives/index.md': {
@@ -253,11 +264,15 @@ declare module 'vue-router/auto-routes' {
         | '/archives/'
       views:
         | never
+      pathParamNames:
+        | never
     }
     'pages/categories/index.md': {
       routes:
         | '/categories/'
       views:
+        | never
+      pathParamNames:
         | never
     }
     'pages/links/index.md': {
@@ -265,17 +280,23 @@ declare module 'vue-router/auto-routes' {
         | '/links/'
       views:
         | never
+      pathParamNames:
+        | never
     }
-    'node_modules/.pnpm/valaxy-theme-yun@0.28.10_ma_e20074ac9672efa227365498cb8a4336/node_modules/valaxy-theme-yun/pages/page/[page].vue': {
+    'node_modules/.pnpm/valaxy-theme-yun@0.28.10_ma_608aa334118f0938b835774fa9390094/node_modules/valaxy-theme-yun/pages/page/[page].vue': {
       routes:
         | '/page/[page]'
       views:
         | never
+      pathParamNames:
+        | 'page'
     }
-    'node_modules/.pnpm/valaxy-theme-yun@0.28.10_ma_e20074ac9672efa227365498cb8a4336/node_modules/valaxy-theme-yun/pages/posts/index.vue': {
+    'node_modules/.pnpm/valaxy-theme-yun@0.28.10_ma_608aa334118f0938b835774fa9390094/node_modules/valaxy-theme-yun/pages/posts/index.vue': {
       routes:
         | '/posts/'
       views:
+        | never
+      pathParamNames:
         | never
     }
     'pages/posts/bubble-sort-problem-proof.md': {
@@ -283,11 +304,15 @@ declare module 'vue-router/auto-routes' {
         | '/posts/bubble-sort-problem-proof'
       views:
         | never
+      pathParamNames:
+        | never
     }
     'pages/posts/GKD-rule-tutoil-attribute-1.md': {
       routes:
         | '/posts/GKD-rule-tutoil-attribute-1'
       views:
+        | never
+      pathParamNames:
         | never
     }
     'pages/posts/GKD-rule-tutoil-attribute-2.md': {
@@ -295,11 +320,15 @@ declare module 'vue-router/auto-routes' {
         | '/posts/GKD-rule-tutoil-attribute-2'
       views:
         | never
+      pathParamNames:
+        | never
     }
     'pages/posts/GKD-rule-tutoil-selectors-1.md': {
       routes:
         | '/posts/GKD-rule-tutoil-selectors-1'
       views:
+        | never
+      pathParamNames:
         | never
     }
     'pages/posts/GKD-rule-tutoil-selectors-2.md': {
@@ -307,11 +336,15 @@ declare module 'vue-router/auto-routes' {
         | '/posts/GKD-rule-tutoil-selectors-2'
       views:
         | never
+      pathParamNames:
+        | never
     }
     'pages/posts/GKD-subscription-stop-maintain.md': {
       routes:
         | '/posts/GKD-subscription-stop-maintain'
       views:
+        | never
+      pathParamNames:
         | never
     }
     'pages/posts/Make-GKD-Inspect-Better-development.md': {
@@ -319,11 +352,15 @@ declare module 'vue-router/auto-routes' {
         | '/posts/Make-GKD-Inspect-Better-development'
       views:
         | never
+      pathParamNames:
+        | never
     }
     'pages/posts/milthm-reality-calculate.md': {
       routes:
         | '/posts/milthm-reality-calculate'
       views:
+        | never
+      pathParamNames:
         | never
     }
     'pages/posts/note.md': {
@@ -331,11 +368,15 @@ declare module 'vue-router/auto-routes' {
         | '/posts/note'
       views:
         | never
+      pathParamNames:
+        | never
     }
     'pages/posts/P2669-solution.md': {
       routes:
         | '/posts/P2669-solution'
       views:
+        | never
+      pathParamNames:
         | never
     }
     'pages/posts/phylosophy-basic-question.md': {
@@ -343,11 +384,15 @@ declare module 'vue-router/auto-routes' {
         | '/posts/phylosophy-basic-question'
       views:
         | never
+      pathParamNames:
+        | never
     }
     'pages/posts/QwQNT-ninth-event-answers-and-source-code.md': {
       routes:
         | '/posts/QwQNT-ninth-event-answers-and-source-code'
       views:
+        | never
+      pathParamNames:
         | never
     }
     'pages/posts/sabishii-natsu-no-seinishite-lyrics.md': {
@@ -355,17 +400,23 @@ declare module 'vue-router/auto-routes' {
         | '/posts/sabishii-natsu-no-seinishite-lyrics'
       views:
         | never
+      pathParamNames:
+        | never
     }
     'pages/sponsor/index.md': {
       routes:
         | '/sponsor/'
       views:
         | never
+      pathParamNames:
+        | never
     }
     'pages/tags/index.md': {
       routes:
         | '/tags/'
       views:
+        | never
+      pathParamNames:
         | never
     }
   }

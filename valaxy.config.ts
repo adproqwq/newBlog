@@ -100,6 +100,9 @@ export default defineValaxyConfig<UserThemeConfig>({
         fixed: true,
         api: 'https://api.injahow.cn/meting/?server=:server&type=:type&id=:id&r=:r',
       },
+      options: {
+        animationIn: true,
+      },
     }),
     addonVercount({
       api: 'cn',

@@ -150,6 +150,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/posts/math-project/': RouteRecordInfo<
+      '/posts/math-project/',
+      '/posts/math-project',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/posts/milthm-reality-calculate': RouteRecordInfo<
       '/posts/milthm-reality-calculate',
       '/posts/milthm-reality-calculate',
@@ -350,6 +357,14 @@ declare module 'vue-router/auto-routes' {
     'pages/posts/Make-GKD-Inspect-Better-development.md': {
       routes:
         | '/posts/Make-GKD-Inspect-Better-development'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'pages/posts/math-project/index.md': {
+      routes:
+        | '/posts/math-project/'
       views:
         | never
       pathParamNames:

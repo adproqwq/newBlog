@@ -11,6 +11,18 @@
     },
     "items": [
         {
+            "id": "https://blog.adproqwq.top/posts/math-project/index",
+            "content_html": "<h2>摘要</h2>\n<p>在城市普遍实行阶梯水价的当今社会，用水越多，单价越贵。<br>\n如何在保证生活质量的前提下将用水成本降低是所有家庭都面临的重要问题。<br>\n本文使用一些简单的数学方法，通过构建模型、分析方案等研究方法，同时采用信息技术等手段，分析了一些节水思路和方案，尝试提出一些可行性建议。</p>\n<br/><p>访问 <a href=\"https://blog.adproqwq.top/posts/math-project/index\" target=\"_blank\">https://blog.adproqwq.top/posts/math-project/index</a> 阅读全文。</p>",
+            "url": "https://blog.adproqwq.top/posts/math-project/index",
+            "title": "家庭“阶梯水价”下的用水优化——以李明一家为例",
+            "date_modified": "2026-09-30T16:37:53.000Z",
+            "date_published": "2026-09-30T16:37:53.000Z",
+            "author": {
+                "name": "Aone",
+                "url": "https://github.com/adproqwq"
+            }
+        },
+        {
             "id": "https://blog.adproqwq.top/posts/bubble-sort-problem-proof",
             "content_html": "<h1>1. 概念解释</h1>\n<h2>冒泡排序</h2>\n<p>在任意有限实数列 $(a_n)$ 中，对 $a_i$，$i \\in \\N$ 执行以下操作：</p>\n<ol>\n<li>若 $a_i &gt; a_{i+1}$，$i \\</li>\n</ol>\n<br/><p>访问 <a href=\"https://blog.adproqwq.top/posts/bubble-sort-problem-proof\" target=\"_blank\">https://blog.adproqwq.top/posts/bubble-sort-problem-proof</a> 阅读全文。</p>",
             "url": "https://blog.adproqwq.top/posts/bubble-sort-problem-proof",

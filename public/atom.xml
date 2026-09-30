@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.adproqwq.top/</id>
     <title>AoneのBlog</title>
-    <updated>2026-09-30T14:31:04.604Z</updated>
+    <updated>2026-09-30T18:40:47.871Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Aone</name>
@@ -15,6 +15,23 @@
     <logo>https://blog.adproqwq.top/avatar.png</logo>
     <icon>https://blog.adproqwq.top/favicon.svg</icon>
     <rights>CC BY-NC-SA 4.0 2026 © Aone</rights>
+    <entry>
+        <title type="html"><![CDATA[家庭“阶梯水价”下的用水优化——以李明一家为例]]></title>
+        <id>https://blog.adproqwq.top/posts/math-project/index</id>
+        <link href="https://blog.adproqwq.top/posts/math-project/index"/>
+        <updated>2026-09-30T16:37:53.000Z</updated>
+        <content type="html"><![CDATA[<h2>摘要</h2>
+<p>在城市普遍实行阶梯水价的当今社会，用水越多，单价越贵。<br>
+如何在保证生活质量的前提下将用水成本降低是所有家庭都面临的重要问题。<br>
+本文使用一些简单的数学方法，通过构建模型、分析方案等研究方法，同时采用信息技术等手段，分析了一些节水思路和方案，尝试提出一些可行性建议。</p>
+<br/><p>访问 <a href="https://blog.adproqwq.top/posts/math-project/index" target="_blank">https://blog.adproqwq.top/posts/math-project/index</a> 阅读全文。</p>]]></content>
+        <author>
+            <name>Aone</name>
+            <email>adpro_qwq@qq.com</email>
+            <uri>https://github.com/adproqwq</uri>
+        </author>
+        <published>2026-09-30T16:37:53.000Z</published>
+    </entry>
     <entry>
         <title type="html"><![CDATA[对任意有限实数列进行有限次冒泡排序的结果必为非递减数列的证明]]></title>
         <id>https://blog.adproqwq.top/posts/bubble-sort-problem-proof</id>

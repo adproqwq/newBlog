@@ -1,9 +1,8 @@
 <template>
   <YunCard>
-    一个有意思的项目：
-    <a href="https://ogame-vue-ts.wenzi.games/">
-      OGame-Vue-Ts
+    <a href="https://aigengtu.com/">
+      梗鲸 · DeepSeek 鲸鱼娘表情包库
     </a>
-    我已经玩上瘾了！
+    一键获取大肥鱼表情包！
   </YunCard>
 </template>
